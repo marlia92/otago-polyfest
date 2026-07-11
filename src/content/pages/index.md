@@ -9,8 +9,8 @@ pageSections:
     subtext: >-
       **[Add your welcome message here] — a warm intro about what Otago
       Polyfest is, who it's for, and why it matters to your community.**
-    imageSource: /src/assets/images/colour-pasifika.svg
-    imageAlt: 'Otago Polyfest hero image — REPLACE with real festival photo'
+    imageSource: /src/assets/images/photos/hero-performer.jpg
+    imageAlt: 'Otago Polyfest performer on stage'
     imageAspectRatio: none
     buttonSections:
       - _component: building-blocks/core-elements/button
@@ -77,8 +77,8 @@ pageSections:
 
       &nbsp;
     buttonSections: []
-    imageSource: /src/assets/images/screenshot-2026-02-22-at-9-07-01-pm.png
-    imageAlt: '[Replace with a real festival photo]'
+    imageSource: /src/assets/images/photos/about-performer.jpg
+    imageAlt: 'Otago Polyfest performer'
     imageAspectRatio: none
     imageRounded: true
     reverse: true

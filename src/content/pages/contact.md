@@ -6,9 +6,9 @@ pageSections:
     eyebrow: ''
     heading: Get in Touch
     subtext: >-
-      [Placeholder — replace with contact intro text. Note: this form needs
-      a submission endpoint wired up before launch — e.g. Netlify Forms,
-      Formspree, or similar. It won't send anywhere yet.]
+      You can also reach us directly at admin@otagopolyfest.nz. Note: this
+      form needs a submission endpoint wired up before launch — e.g. Netlify
+      Forms, Formspree, or similar. It won't send anywhere yet.
     buttonSections: []
     colorScheme: inherit
     backgroundColor: base

@@ -1,5 +1,5 @@
 {
-  "logoSource": "/src/assets/images/logo.svg",
+  "logoSource": "/src/assets/images/brand/otago-polyfest-logo-black.png",
   "logoAlt": "Otago Polyfest logo",
   "links": [
     {
@@ -22,7 +22,11 @@
   "socials": [
     {
       "icon": "social/facebook",
-      "link": "https://www.facebook.com/OtagoPolyfest/"
+      "link": "https://www.facebook.com/OtagoPolyfest"
+    },
+    {
+      "icon": "social/instagram",
+      "link": "https://www.instagram.com/otagopolyfest"
     }
   ],
   "footerText": "© 2026 Otago Polyfest. All rights reserved."
