@@ -16,7 +16,8 @@ sessions:
     group_name: Example Group Name
     stage: Main Stage
     notes: ''
-  - group_name: Example Group Name
+  - time: 6:20 pm
+    group_name: Example Group Name
     stage: Main Stage
     notes: ''
 ---
