@@ -45,6 +45,7 @@ collections_config:
     _enabled_editors:
       - content
       - data
+      - visual
     _inputs:
       label:
         type: text
