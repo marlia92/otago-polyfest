@@ -60,6 +60,40 @@ pageSections:
         alignX: start
         size: md
       - _component: building-blocks/core-elements/heading
+        text: Our logos
+        level: h2
+        size: default
+        alignX: start
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/split
+        label: Logos
+        firstColumnContentSections:
+          - _component: building-blocks/core-elements/simple-text
+            text: >-
+              Our original logo was created and designed by  artist Leighton
+              Corbett who had won the logo competition back in the 90s while
+              attending Otago Boys High School. He was also apart of Te Wairua
+              Puhou who continue to grace the Polyfest stage, every year! 
+            alignX: start
+            size: md
+        secondColumnContentSections:
+          - _component: building-blocks/core-elements/image
+            source: /src/assets/images/brand/POLYFEST_logo.png
+            alt: ''
+            rounded: false
+            aspectRatio: none
+            positionVertical: center
+            positionHorizontal: center
+            priority: false
+        distributionMode: quarter-three-quarters
+        fixedWidth:
+        minSplitWidth: 760
+        verticalAlignment: center
+        reverse: false
+        reverseOrderOnMobile: false
+        gap: lg
+      - _component: building-blocks/core-elements/heading
         text: Our banners
         level: h2
         size: default
