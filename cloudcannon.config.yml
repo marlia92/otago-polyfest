@@ -182,6 +182,14 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+  pages_1:
+    path: src/pages
+    icon: pages
+    url: /schedule/
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 collection_groups:
   - heading: Content
     collections:
@@ -194,6 +202,9 @@ collection_groups:
       - data
   - heading: New Collections
     collections: []
+  - heading: New Collections
+    collections:
+      - pages_1
 _inputs:
   pageSections:
     comment: The main sections of the page.
