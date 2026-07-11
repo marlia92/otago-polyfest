@@ -21,6 +21,11 @@ value:
   reverse: false
   colorScheme: inherit
   backgroundColor: base
+  backgroundImage:
+    source: ''
+    alt: ''
+    positionVertical: top
+    positionHorizontal: center
 preview:
   text:
     - Hero Split
