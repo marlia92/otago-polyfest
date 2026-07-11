@@ -10,14 +10,14 @@ sessions:
     notes: ''
   - time: 5:30 pm
     group_name: Official Pōwhiri & Opening
-    stage:
+    stage: Main Stage
     notes: ''
   - time: 6:00 pm
     group_name: Example Group Name
-    stage:
+    stage: Main Stage
     notes: ''
   - group_name: Example Group Name
-    stage:
+    stage: Main Stage
     notes: ''
 ---
 Replace these placeholder sessions with your real Day 1 running order. Add or remove entries as needed — each one just needs a time and a group name.
