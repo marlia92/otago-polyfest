@@ -6,8 +6,9 @@ pageSections:
     eyebrow: OTAGO POLYFEST
     heading: Celebrating the Pacific and Māori communities of Ōtepoti
     subtext: >-
-      **\[Add your welcome message here\] — a warm intro about what Otago
-      Polyfest is, who it's for, and why it matters to your community.**
+      Otago Polyfest is an opportunity for children, young people and whānau to
+      participate in Māori and Pacific cultural experiences that broaden and
+      celebrate their individual and collective cultural identities.
     imageSource: /src/assets/images/photos/hero-performer.jpg
     imageAlt: Otago Polyfest performer on stage
     imageAspectRatio: none
