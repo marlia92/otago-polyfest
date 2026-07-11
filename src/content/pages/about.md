@@ -130,8 +130,8 @@ pageSections:
           Of Samoan and Tongan descent, Pip works as an Education Adviser for
           the Ministry of Education and brings a background across education and
           the arts to Otago Polyfest.
-        imageSource: ''
-        imageAlt: Pip Laufiso — photo needed
+        imageSource: /src/assets/images/screenshot-2026-02-22-at-9-07-01-pm.png
+        imageAlt: Pip Laufiso photo
       - _component: page-sections/people/team-grid/team-item
         name: Angelina Kiore
         role: Trustee, Co-Chair
