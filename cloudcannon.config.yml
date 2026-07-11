@@ -40,7 +40,7 @@ collections_config:
     glob:
       - '**/*.md'
     icon: calendar-days
-    url: 
+    url:
     disable_url: true
     _enabled_editors:
       - content
@@ -48,19 +48,26 @@ collections_config:
     _inputs:
       label:
         type: text
-        comment: "Day label shown on the schedule page, e.g. 'Day 1 — Friday'."
+        comment: Day label shown on the schedule page, e.g. 'Day 1 — Friday'.
+        cascade: true
       date:
         type: text
-        comment: "Date for this day, e.g. 2026-10-16."
+        comment: Date for this day, e.g. 2026-10-16.
+        cascade: true
       order:
         type: number
-        comment: Controls the order this day appears in on the schedule page (1, 2, 3...).
+        comment: >-
+          Controls the order this day appears in on the schedule page (1, 2,
+          3...).
+        cascade: true
       sessions:
         type: array
-        comment: The timed running order for this day.
         options:
           structures:
+            style: select
             values: sessions
+        comment: The timed running order for this day.
+        cascade: true
     add_options:
       - name: Add New Schedule Day
         icon: calendar-days
@@ -97,6 +104,7 @@ collections_config:
       pubDate:
         type: date
         comment: Date this post was published.
+        cascade: true
     add_options:
       - name: Add News Post
         icon: newspaper
@@ -168,6 +176,8 @@ collections_config:
         options:
           paths:
             uploads: src/assets/images
+        cascade: true
+      $.navData[*].children:
         cascade: true
     disable_add: false
     disable_add_folder: false
