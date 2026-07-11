@@ -33,7 +33,7 @@ pageSections:
     backgroundColor: base
     heading_mi: ''
   - _component: page-sections/builders/custom-section
-    label: Meet the crew
+    label: 'Graphic Strip '
     contentSections:
       - _component: building-blocks/wrappers/grid
         label: ''
