@@ -6,18 +6,20 @@ pageSections:
     eyebrow: ''
     heading: Get in Touch
     subtext: >-
-      You can also reach us directly at admin@otagopolyfest.nz. Note: this
-      form needs a submission endpoint wired up before launch — e.g. Netlify
-      Forms, Formspree, or similar. It won't send anywhere yet.
+      You can also reach us directly at admin@otagopolyfest.nz. Note: this form
+      needs a submission endpoint wired up before launch — e.g. Netlify Forms,
+      Formspree, or similar. It won't send anywhere yet.
     buttonSections: []
     colorScheme: inherit
     backgroundColor: base
     paddingVertical: 2xl
   - _component: page-sections/builders/custom-section
-    label: 'Contact form'
+    label: Contact form
     contentSections:
       - _component: building-blocks/forms/form
-        action: ''
+        action: >-
+          <input type="hidden" name="inbox_key"
+          value="production-general-contact">
         formBlocks:
           - _component: building-blocks/forms/input
             label: Name
@@ -35,6 +37,11 @@ pageSections:
             required: true
           - _component: building-blocks/forms/submit
             text: Send Message
+            variant: primary
+            size: md
+            iconPosition: before
+            hideText: false
+            disabled: false
     maxContentWidth: sm
     paddingHorizontal: md
     paddingVertical: xl

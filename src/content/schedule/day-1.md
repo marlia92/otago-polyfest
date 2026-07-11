@@ -1,7 +1,7 @@
 ---
 _schema: default
-label: 'Day 1 — Friday'
-date: '2026-10-16'
+label: Opening Night — Monday - Evening only session
+date: '2026-09-07'
 order: 1
 sessions:
   - time: '9:00am'

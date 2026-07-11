@@ -4,37 +4,37 @@
   "navData": [
     {
       "name": "Home",
-      "name_mi": "",
+      "name_mi": "Whārangi kāinga",
       "path": "/",
       "children": []
     },
     {
       "name": "About",
-      "name_mi": "",
+      "name_mi": "He kupu mō mātou",
       "path": "/about/",
       "children": []
     },
     {
       "name": "Schedule",
-      "name_mi": "",
+      "name_mi": "Wātaka",
       "path": "/schedule/",
       "children": []
     },
     {
       "name": "News",
-      "name_mi": "",
+      "name_mi": "Pānui",
       "path": "/blog/",
       "children": []
     },
     {
       "name": "Sponsors",
-      "name_mi": "",
+      "name_mi": "Kaitautoko",
       "path": "/sponsors/",
       "children": []
     },
     {
       "name": "Contact",
-      "name_mi": "",
+      "name_mi": "Whakapā mai",
       "path": "/contact/",
       "children": []
     }

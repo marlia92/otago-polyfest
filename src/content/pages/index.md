@@ -4,11 +4,10 @@ title: 'Otago Polyfest'
 pageSections:
   - _component: page-sections/heroes/hero-split
     eyebrow: OTAGO POLYFEST
-    heading: Celebrating the Pacific and Māori communities of Ōtepoti
-    heading_mi: ''
+    heading: Kia Maumahara ki tōu Mana Ahua Ake
     subtext: >-
-      **[Add your welcome message here] — a warm intro about what Otago
-      Polyfest is, who it's for, and why it matters to your community.**
+      Join us for a week of performance, kai and whānau at the Breeze FM Arena,
+      Edgar Centre. Everyone is welcome — nau mai, haere mai.
     imageSource: /src/assets/images/photos/hero-performer.jpg
     imageAlt: 'Otago Polyfest performer on stage'
     imageAspectRatio: none
@@ -138,9 +137,9 @@ pageSections:
     eyebrow: 'Our story'
     heading: About Otago Polyfest
     subtext: >-
-      [Placeholder — replace with the real history of Otago Polyfest: when
-      it started, who founded it, and how it has grown. Don't publish this
-      placeholder text as-is.]
+      Otago Polyfest is an opportunity for children, young people and whānau to
+      participate in Māori and Pacific cultural experiences that broaden and
+      celebrate their individual and collective cultural identities.
 
 
       &nbsp;

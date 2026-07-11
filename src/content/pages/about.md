@@ -68,6 +68,79 @@ pageSections:
           continues today.
         alignX: start
         size: md
+      - _component: building-blocks/core-elements/heading
+        text: Our logos
+        level: h2
+        size: default
+        alignX: start
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/split
+        label: Logos
+        firstColumnContentSections:
+          - _component: building-blocks/core-elements/simple-text
+            text: >-
+              Our original logo was created and designed by  artist Leighton
+              Corbett who had won the logo competition back in the 90s while
+              attending Otago Boys High School. He was also apart of Te Wairua
+              Puhou who continue to grace the Polyfest stage, every year! 
+            alignX: start
+            size: md
+        secondColumnContentSections:
+          - _component: building-blocks/core-elements/image
+            source: /src/assets/images/brand/POLYFEST_logo.png
+            alt: ''
+            rounded: false
+            aspectRatio: none
+            positionVertical: center
+            positionHorizontal: center
+            priority: false
+        distributionMode: quarter-three-quarters
+        fixedWidth:
+        minSplitWidth: 760
+        verticalAlignment: center
+        reverse: false
+        reverseOrderOnMobile: false
+        gap: lg
+      - _component: building-blocks/core-elements/heading
+        text: Our banners
+        level: h2
+        size: default
+        alignX: start
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/split
+        label: Banners
+        firstColumnContentSections:
+          - _component: building-blocks/core-elements/simple-text
+            text: >-
+              In 2012, marking the festival's 19th year, a community project
+              brought together Polyfest artists Tere Moeroa and Heremāhina
+              Eketone with design students from Otago Polytechnic's Dunedin
+              School of Art to create new stage banners, Te Moananui Ā Kiwa —
+              rich in symbolism connecting Aotearoa to the Pacific nations
+              across the ocean. The banners were dedicated at the festival's
+              opening night at the Edgar Centre later that year, and the
+              partnership between Polyfest and Otago Polytechnic continues
+              today.
+            alignX: start
+            size: md
+        secondColumnContentSections:
+          - _component: building-blocks/core-elements/image
+            source: /src/assets/images/op-original-banner-design.jpg
+            alt: ''
+            rounded: false
+            aspectRatio: none
+            positionVertical: center
+            positionHorizontal: center
+            priority: false
+        distributionMode: quarter-three-quarters
+        fixedWidth:
+        minSplitWidth: 760
+        verticalAlignment: center
+        reverse: false
+        reverseOrderOnMobile: false
+        gap: lg
       - _component: building-blocks/core-elements/simple-text
         text: >-
           Source: McCaw, C. & McKinlay, P. (2012). A Community Project: The

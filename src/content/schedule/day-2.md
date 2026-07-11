@@ -1,7 +1,7 @@
 ---
 _schema: default
-label: 'Day 2 — Saturday'
-date: '2026-10-17'
+label: Day 2 — Tuesday - Day & Evening Sessions
+date: '2026-09-08'
 order: 2
 sessions:
   - time: '9:00am'
