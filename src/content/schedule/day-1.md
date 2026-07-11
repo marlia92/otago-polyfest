@@ -1,25 +1,23 @@
 ---
 _schema: default
-label: 'Day 1 — Friday'
-date: '2026-10-16'
+label: Opening Night — Monday
+date: '2026-09-07'
 order: 1
 sessions:
-  - time: '9:00am'
-    group_name: 'Official Pōwhiri & Opening'
-    stage: 'Main Stage'
+  - time: 5:00 pm
+    group_name: 'Doors Open '
+    stage:
     notes: ''
-  - time: '9:45am'
-    group_name: 'Example Group Name'
-    stage: 'Main Stage'
+  - time: 5:30 pm
+    group_name: Official Pōwhiri & Opening
+    stage:
     notes: ''
-  - time: '10:15am'
-    group_name: 'Example Group Name'
-    stage: 'Second Stage'
+  - time: 6:00 pm
+    group_name: Example Group Name
+    stage:
     notes: ''
-  - time: '11:00am'
-    group_name: 'Example Group Name'
-    stage: 'Main Stage'
+  - group_name: Example Group Name
+    stage:
     notes: ''
 ---
-
 Replace these placeholder sessions with your real Day 1 running order. Add or remove entries as needed — each one just needs a time and a group name.
