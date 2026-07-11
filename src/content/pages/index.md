@@ -32,6 +32,74 @@ pageSections:
     reverse: false
     colorScheme: inherit
     backgroundColor: base
+  - _component: page-sections/builders/custom-section
+    label: 'Meet the crew'
+    contentSections:
+      - _component: building-blocks/core-elements/heading
+        text: A few friendly faces
+        level: h2
+        size: default
+        alignX: center
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/grid
+        label: ''
+        layout: center
+        minItemWidth: 150
+        maxItemWidth: 200
+        items:
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/image
+                source: /src/assets/images/brand/mascot-tama.png
+                alt: 'Illustrated Otago Polyfest character'
+                rounded: false
+                aspectRatio: none
+                positionVertical: center
+                positionHorizontal: center
+                priority: false
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/image
+                source: /src/assets/images/brand/mascot-kotiro-1.png
+                alt: 'Illustrated Otago Polyfest character'
+                rounded: false
+                aspectRatio: none
+                positionVertical: center
+                positionHorizontal: center
+                priority: false
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/image
+                source: /src/assets/images/brand/mascot-kotiro-3.png
+                alt: 'Illustrated Otago Polyfest character'
+                rounded: false
+                aspectRatio: none
+                positionVertical: center
+                positionHorizontal: center
+                priority: false
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/image
+                source: /src/assets/images/brand/mascot-kotiro-4.png
+                alt: 'Illustrated Otago Polyfest character'
+                rounded: false
+                aspectRatio: none
+                positionVertical: center
+                positionHorizontal: center
+                priority: false
+        gap: lg
+    maxContentWidth: lg
+    paddingHorizontal: md
+    paddingVertical: xl
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+    rounded: false
   - _component: page-sections/features/feature-grid
     eyebrow: What to expect
     heading: A celebration of culture and community
@@ -104,15 +172,46 @@ pageSections:
     eyebrow: Otago Polyfest Team
     heading: Meet the team
     subtext: >-
-      [Placeholder — replace with a short intro to your organising committee
-      or leadership team.]
+      Otago Polyfest is guided by a General Manager and a Board of Trustees
+      from Te Mana Ahua Ake Trust, bringing decades of combined experience
+      across education and the arts. [Add headshot photos when available.]
     teamMembers:
       - _component: page-sections/people/team-grid/team-item
-        name: '[Add name]'
-        role: '[Add role]'
-        bio: 'Bio coming soon'
-        imageSource: /src/assets/images/screenshot-2026-02-22-at-9-07-01-pm.png
-        imageAlt: '[Add name]'
+        name: Pip Laufiso
+        role: General Manager
+        bio: >-
+          Of Samoan and Tongan descent, Pip works as an Education Adviser
+          for the Ministry of Education and brings a background across
+          education and the arts to Otago Polyfest.
+        imageSource: ''
+        imageAlt: 'Pip Laufiso — photo needed'
+      - _component: page-sections/people/team-grid/team-item
+        name: Angelina Kiore
+        role: Trustee, Co-Chair
+        bio: >-
+          Ngāti Porou, Ngāi Tūhoe. Involved with Otago Polyfest for 26
+          years, Angelina co-chairs Te Mana Ahua Ake Trust and champions
+          identity, culture and language for Māori and Pacific tamariki.
+        imageSource: ''
+        imageAlt: 'Angelina Kiore — photo needed'
+      - _component: page-sections/people/team-grid/team-item
+        name: Fiona Matapo
+        role: Trustee
+        bio: >-
+          Te Arawa. A Ministry of Education-accredited facilitator
+          specialising in Māori medium education, with over 30 years'
+          experience in education based in Ōtepoti.
+        imageSource: ''
+        imageAlt: 'Fiona Matapo — photo needed'
+      - _component: page-sections/people/team-grid/team-item
+        name: Tagiilima Feleti
+        role: Trustee
+        bio: >-
+          Of Samoan heritage, born in Matautu, Lefaga. Manager of the
+          Pacific Islands Centre at the University of Otago, with close to
+          30 years' experience across the education sector.
+        imageSource: ''
+        imageAlt: 'Tagiilima Feleti — photo needed'
     colorScheme: inherit
     backgroundColor: base
   - _component: page-sections/ctas/cta-center

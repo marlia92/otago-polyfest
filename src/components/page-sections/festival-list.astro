@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+
+// Get all festival pages
+const festivals = await getCollection('festivals');
+---
+
+<section class="festival-list">
+  <h2>Festivals</h2>
+  <ul>
+    {festivals.map(festival => (
+      <li key={festival.id}>
+        <h3>{festival.data.title}</h3>
+        {festival.data.date && <p>{festival.data.date}</p>}
+        {festival.data.location && <p>{festival.data.location}</p>}
+      </li>
+    ))}
+  </ul>
+</section>

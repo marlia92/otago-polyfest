@@ -55,11 +55,25 @@ pageSections:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
         text: >-
-          [Placeholder — replace with the real history: when Otago Polyfest
-          started, key milestones, and how it's grown. Don't publish this
-          placeholder text as-is.]
+          Otago Polyfest began in 1993 as the Otago Early Childhood and
+          Schools' Māori and Pacific Island Festival, and has grown every
+          year since. In 2012, marking the festival's 19th year, a
+          community project brought together Polyfest artists Tere Moeroa
+          and Heremāhina Eketone with design students from Otago
+          Polytechnic's Dunedin School of Art to create new stage banners,
+          Te Moananui Ā Kiwa — rich in symbolism connecting Aotearoa to the
+          Pacific nations across the ocean. The banners were dedicated at
+          the festival's opening night at the Edgar Centre later that year,
+          and the partnership between Polyfest and Otago Polytechnic
+          continues today.
         alignX: start
         size: md
+      - _component: building-blocks/core-elements/simple-text
+        text: >-
+          Source: McCaw, C. & McKinlay, P. (2012). A Community Project: The
+          Making of Te Moananui Ā Kiwa. *Scope: (Art & Design)*, 7, 120–125.
+        alignX: start
+        size: sm
     maxContentWidth: lg
     paddingHorizontal: md
     paddingVertical: xl
