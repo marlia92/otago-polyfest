@@ -40,35 +40,27 @@ collections_config:
     glob:
       - '**/*.md'
     icon: calendar-days
-    url:
+    url: 
     disable_url: true
     _enabled_editors:
       - content
       - data
-      - visual
     _inputs:
       label:
         type: text
-        comment: Day label shown on the schedule page, e.g. 'Day 1 — Friday'.
-        cascade: true
+        comment: "Day label shown on the schedule page, e.g. 'Day 1 — Friday'."
       date:
         type: text
-        comment: Date for this day, e.g. 2026-10-16.
-        cascade: true
+        comment: "Date for this day, e.g. 2026-10-16."
       order:
         type: number
-        comment: >-
-          Controls the order this day appears in on the schedule page (1, 2,
-          3...).
-        cascade: true
+        comment: Controls the order this day appears in on the schedule page (1, 2, 3...).
       sessions:
         type: array
+        comment: The timed running order for this day.
         options:
           structures:
-            style: select
             values: sessions
-        comment: The timed running order for this day.
-        cascade: true
     add_options:
       - name: Add New Schedule Day
         icon: calendar-days
@@ -105,7 +97,6 @@ collections_config:
       pubDate:
         type: date
         comment: Date this post was published.
-        cascade: true
     add_options:
       - name: Add News Post
         icon: newspaper
@@ -124,39 +115,6 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: false
         name: New News Post
-  team:
-    path: src/content/team
-    glob:
-      - '**/*.md'
-    icon: users
-    url:
-    disable_url: true
-    _enabled_editors:
-      - visual
-      - content
-    _inputs:
-      title:
-        type: text
-        comment: Controls the metadata title for the page.
-        cascade: true
-    add_options:
-      - name: Add New Team Member
-        icon: users
-        schema: default
-    create:
-      path: '[relative_base_path]/{filename|slugify|lowercase}.md'
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    new_preview_url: /
-    schemas:
-      default:
-        path: .cloudcannon/schemas/team.md
-        reorder_inputs: true
-        hide_extra_inputs: false
-        remove_empty_inputs: false
-        remove_extra_inputs: false
-        name: New Team Member
   data:
     path: src/data
     glob:
@@ -178,21 +136,6 @@ collections_config:
           paths:
             uploads: src/assets/images
         cascade: true
-      $.navData[*].children:
-        cascade: true
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-  pages_1:
-    path: src/pages
-    name: Schedule
-    icon: calendar_month
-    url: /schedule/
-    disable_url: false
-    _enabled_editors:
-      - visual
-      - content
-      - data
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -202,15 +145,11 @@ collection_groups:
       - pages
       - blog
       - schedule
-      - team
   - heading: Data
     collections:
       - data
   - heading: New Collections
     collections: []
-  - heading: New Collections
-    collections:
-      - pages_1
 _inputs:
   pageSections:
     comment: The main sections of the page.
