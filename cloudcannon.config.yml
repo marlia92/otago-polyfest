@@ -1,0 +1,66 @@
+paths:
+  uploads: public/uploads
+  static: public
+collections_config:
+  otago_polyfest_blog:
+    path: otago-polyfest/src/content/blog
+    icon: account_box
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  otago_polyfest_data:
+    path: otago-polyfest/src/data
+    icon: 3g_mobiledata
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  otago_polyfest_pages:
+    path: otago-polyfest/src/pages
+    icon: last_page
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  otago_polyfest_schedule:
+    path: otago-polyfest/src/content/schedule
+    icon: airport_shuttle
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  otago_polyfest_src_content_pages:
+    path: otago-polyfest/src/content/pages
+    icon: collapse_content
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  otago_polyfest_team:
+    path: otago-polyfest/src/content/team
+    icon: tools_flat_head
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: Pacific/Auckland
+markdown:
+  engine: commonmark
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: true
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: false
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: false
