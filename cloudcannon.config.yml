@@ -184,7 +184,8 @@ collections_config:
     disable_file_actions: false
   pages_1:
     path: src/pages
-    icon: pages
+    name: Schedule
+    icon: calendar_month
     url: /schedule/
     disable_url: false
     _enabled_editors:
