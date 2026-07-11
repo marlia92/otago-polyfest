@@ -4,7 +4,7 @@ title: Otago Polyfest
 pageSections:
   - _component: page-sections/heroes/hero-split
     eyebrow: OTAGO POLYFEST
-    heading: Celebrating the Pacific and Māori communities of Ōtepoti
+    heading: Kia Maumahara ki tōu Mana Ahua Ake
     subtext: >-
       Otago Polyfest is an opportunity for children, young people and whānau to
       participate in Māori and Pacific cultural experiences that broaden and
