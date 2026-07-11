@@ -32,6 +32,62 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     heading_mi: ''
+  - _component: page-sections/events/next-event
+    eyebrow:
+    heading: Countdown to Otago Polyfest
+    colorScheme: contrast
+    backgroundColor: base
+    paddingVertical: 2xl
+  - _component: page-sections/features/feature-split
+    eyebrow: Our story
+    heading: About Otago Polyfest
+    subtext: >-
+      Otago Polyfest is an opportunity for children, young people and whānau to
+      participate in Māori and Pacific cultural experiences that broaden and
+      celebrate their individual and collective cultural identities.
+
+
+      &nbsp;
+    buttonSections: []
+    imageSource: /src/assets/images/photos/about-performer.jpg
+    imageAlt: Otago Polyfest performer
+    imageAspectRatio: none
+    imageRounded: true
+    reverse: true
+    colorScheme: default
+    backgroundColor: base
+  - _component: page-sections/features/feature-grid
+    eyebrow: What to expect
+    heading: A celebration of culture and community
+    subtext: >-
+      \[Placeholder — replace with a couple of sentences about what makes Otago
+      Polyfest special: number of schools/groups involved, kapa haka and Pacific
+      performing arts, stalls, whānau atmosphere, etc.\]
+    gap: md
+    minItemWidth: 270
+    maxItemWidth: 360
+    features:
+      - _component: page-sections/features/feature-grid/feature-item
+        title: Performances
+        description: >-
+          \[Replace\] Kapa haka and Pacific performing arts groups from across
+          the region.
+        iconName: musical-note
+        iconColor: blue
+      - _component: page-sections/features/feature-grid/feature-item
+        title: Community
+        description: \[Replace\] Whānau, schools, and community groups coming together.
+        iconName: user-group
+        iconColor: red
+      - _component: page-sections/features/feature-grid/feature-item
+        title: Culture
+        description: >-
+          \[Replace\] Celebrating the diverse cultures of the Pacific and
+          Aotearoa.
+        iconName: globe-asia-australia
+        iconColor: yellow
+    colorScheme: contrast
+    backgroundColor: base
   - _component: page-sections/builders/custom-section
     label: 'Graphic Strip '
     contentSections:
@@ -85,78 +141,6 @@ pageSections:
     maxContentWidth: lg
     paddingHorizontal: md
     paddingVertical: xl
-    colorScheme: inherit
-    backgroundColor: base
-    backgroundImage:
-      source: ''
-      alt: ''
-      positionVertical: top
-      positionHorizontal: center
-    rounded: false
-  - _component: page-sections/features/feature-grid
-    eyebrow: What to expect
-    heading: A celebration of culture and community
-    subtext: >-
-      \[Placeholder — replace with a couple of sentences about what makes Otago
-      Polyfest special: number of schools/groups involved, kapa haka and Pacific
-      performing arts, stalls, whānau atmosphere, etc.\]
-    gap: md
-    minItemWidth: 270
-    maxItemWidth: 360
-    features:
-      - _component: page-sections/features/feature-grid/feature-item
-        title: Performances
-        description: >-
-          \[Replace\] Kapa haka and Pacific performing arts groups from across
-          the region.
-        iconName: musical-note
-        iconColor: blue
-      - _component: page-sections/features/feature-grid/feature-item
-        title: Community
-        description: \[Replace\] Whānau, schools, and community groups coming together.
-        iconName: user-group
-        iconColor: red
-      - _component: page-sections/features/feature-grid/feature-item
-        title: Culture
-        description: >-
-          \[Replace\] Celebrating the diverse cultures of the Pacific and
-          Aotearoa.
-        iconName: globe-asia-australia
-        iconColor: yellow
-    colorScheme: contrast
-    backgroundColor: base
-  - _component: page-sections/events/next-event
-    eyebrow: Next up
-    heading: Countdown to Otago Polyfest
-    colorScheme: default
-    backgroundColor: base
-    paddingVertical: 2xl
-  - _component: page-sections/features/feature-split
-    eyebrow: Our story
-    heading: About Otago Polyfest
-    subtext: >-
-      Otago Polyfest is an opportunity for children, young people and whānau to
-      participate in Māori and Pacific cultural experiences that broaden and
-      celebrate their individual and collective cultural identities.
-
-
-      &nbsp;
-    buttonSections: []
-    imageSource: /src/assets/images/photos/about-performer.jpg
-    imageAlt: Otago Polyfest performer
-    imageAspectRatio: none
-    imageRounded: true
-    reverse: true
-    colorScheme: default
-    backgroundColor: base
-  - _component: page-sections/builders/custom-section
-    label: ''
-    contentSections:
-      - _component: building-blocks/core-elements/divider
-        paddingVertical: lg
-    maxContentWidth: 2xl
-    paddingHorizontal: md
-    paddingVertical: md
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
