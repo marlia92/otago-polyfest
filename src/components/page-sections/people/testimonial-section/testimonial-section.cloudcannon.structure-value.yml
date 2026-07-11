@@ -13,6 +13,11 @@ value:
   paddingVertical: sm
   colorScheme: inherit
   backgroundColor: surface
+  backgroundImage:
+    source: ''
+    alt: ''
+    positionVertical: top
+    positionHorizontal: center
 preview:
   text:
     - Testimonial Section

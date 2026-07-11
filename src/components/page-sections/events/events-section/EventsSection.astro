@@ -13,6 +13,7 @@ const {
   maxEventsToShow = 0,
   colorScheme,
   backgroundColor,
+  backgroundImage,
   paddingVertical = "4xl",
   class: className,
 } = Astro.props;
@@ -27,6 +28,7 @@ const uniqueId = crypto.randomUUID();
   paddingVertical={paddingVertical}
   colorScheme={colorScheme}
   backgroundColor={backgroundColor}
+  backgroundImage={backgroundImage}
 >
   {
     eyebrow && (

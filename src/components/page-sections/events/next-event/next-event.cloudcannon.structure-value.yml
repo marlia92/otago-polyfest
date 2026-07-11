@@ -7,6 +7,11 @@ value:
   heading: ""
   colorScheme: null
   backgroundColor: base
+  backgroundImage:
+    source: ''
+    alt: ''
+    positionVertical: top
+    positionHorizontal: center
   paddingVertical: 4xl
 preview:
   text:

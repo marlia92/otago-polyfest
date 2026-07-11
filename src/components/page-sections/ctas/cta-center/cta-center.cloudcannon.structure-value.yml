@@ -16,6 +16,11 @@ value:
       size: md
   colorScheme: inherit
   backgroundColor: base
+  backgroundImage:
+    source: ''
+    alt: ''
+    positionVertical: top
+    positionHorizontal: center
   rounded: false
 preview:
   text:

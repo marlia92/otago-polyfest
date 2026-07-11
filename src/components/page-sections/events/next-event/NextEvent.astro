@@ -10,6 +10,7 @@ const {
   heading = "",
   colorScheme,
   backgroundColor,
+  backgroundImage,
   paddingVertical = "4xl",
   class: className,
 } = Astro.props;
@@ -62,6 +63,7 @@ const eventsJson = JSON.stringify(eventsData.events);
   paddingVertical={paddingVertical}
   colorScheme={colorScheme}
   backgroundColor={backgroundColor}
+  backgroundImage={backgroundImage}
 >
   <div class="next-event-root" data-events={eventsJson}>
     <div class="next-event-wrapper" style={nextEvent ? undefined : "display: none;"}>
