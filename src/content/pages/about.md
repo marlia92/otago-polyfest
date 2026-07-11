@@ -84,14 +84,14 @@ pageSections:
             size: md
         secondColumnContentSections:
           - _component: building-blocks/core-elements/image
-            source: ''
+            source: /src/assets/images/op-original-banner-design.jpg
             alt: ''
             rounded: false
             aspectRatio: none
             positionVertical: center
             positionHorizontal: center
             priority: false
-        distributionMode: half
+        distributionMode: quarter-three-quarters
         fixedWidth:
         minSplitWidth: 760
         verticalAlignment: center
