@@ -60,7 +60,7 @@ pageSections:
         alignX: start
         size: md
       - _component: building-blocks/core-elements/heading
-<<<<<<< HEAD
+      - _component: building-blocks/core-elements/heading
         text: Our logos
         level: h2
         size: default
@@ -95,8 +95,6 @@ pageSections:
         reverseOrderOnMobile: false
         gap: lg
       - _component: building-blocks/core-elements/heading
-=======
->>>>>>> parent of 1c75327 (Design update)
         text: Our banners
         level: h2
         size: default

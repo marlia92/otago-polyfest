@@ -1,10 +1,6 @@
 ---
 _schema: default
-<<<<<<< HEAD
 label: Opening Night — Monday - Evening only session
-=======
-label: Opening Night — Monday
->>>>>>> parent of 1c75327 (Design update)
 date: '2026-09-07'
 order: 1
 sessions:

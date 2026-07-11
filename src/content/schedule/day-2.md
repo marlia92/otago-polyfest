@@ -1,10 +1,6 @@
 ---
 _schema: default
-<<<<<<< HEAD
 label: Day 2 — Tuesday - Day & Evening Sessions
-=======
-label: Day 2 — Tuesday
->>>>>>> parent of 1c75327 (Design update)
 date: '2026-09-08'
 order: 2
 sessions:
