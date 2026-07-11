@@ -6,7 +6,7 @@ pageSections:
     eyebrow: ''
     heading: About Otago Polyfest
     subtext: >-
-      Otago Polyfest is run by Te Mana Ahua Ake Charitable Trust, giving
+      Otago Polyfest is run by Te Mana Āhua Ake Charitable Trust, giving
       children, young people and whānau in Ōtepoti the chance to celebrate Māori
       and Pacific cultural experiences.
     buttonSections: []
@@ -121,7 +121,7 @@ pageSections:
     subtext: >-
       Otago Polyfest is guided by our General Manager and a Board of Trustees
       from Te Mana Āhua Ake Trust, bringing decades of combined experience
-      across education and the arts. 
+      across education and the arts.
     teamMembers:
       - _component: page-sections/people/team-grid/team-item
         name: Pip Laufiso
