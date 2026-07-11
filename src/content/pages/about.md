@@ -115,50 +115,50 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
     rounded: false
-      - _component: page-sections/people/team-grid
-      eyebrow: Otago Polyfest Team
-      heading: Meet the team
-      subtext: >-
-        Otago Polyfest is guided by a General Manager and a Board of Trustees
-        from Te Mana Ahua Ake Trust, bringing decades of combined experience
-        across education and the arts. [Add headshot photos when available.]
-      teamMembers:
-        - _component: page-sections/people/team-grid/team-item
+  - _component: page-sections/people/team-grid
+    eyebrow: Otago Polyfest Team
+    heading: Meet the team
+    subtext: >-
+      Otago Polyfest is guided by a General Manager and a Board of Trustees from
+      Te Mana Ahua Ake Trust, bringing decades of combined experience across
+      education and the arts. [Add headshot photos when available.]
+    teamMembers:
+      - _component: page-sections/people/team-grid/team-item
         name: Pip Laufiso
         role: General Manager
         bio: >-
-          Of Samoan and Tongan descent, Pip works as an Education Adviser
-          for the Ministry of Education and brings a background across
-          education and the arts to Otago Polyfest.
+          Of Samoan and Tongan descent, Pip works as an Education Adviser for
+          the Ministry of Education and brings a background across education and
+          the arts to Otago Polyfest.
         imageSource: ''
-        imageAlt: 'Pip Laufiso — photo needed'
+        imageAlt: Pip Laufiso — photo needed
       - _component: page-sections/people/team-grid/team-item
         name: Angelina Kiore
         role: Trustee, Co-Chair
         bio: >-
-          Ngāti Porou, Ngāi Tūhoe. Involved with Otago Polyfest for 26
-          years, Angelina co-chairs Te Mana Ahua Ake Trust and champions
-          identity, culture and language for Māori and Pacific tamariki.
+          Ngāti Porou, Ngāi Tūhoe. Involved with Otago Polyfest for 26 years,
+          Angelina co-chairs Te Mana Ahua Ake Trust and champions identity,
+          culture and language for Māori and Pacific tamariki.
         imageSource: ''
-        imageAlt: 'Angelina Kiore — photo needed'
+        imageAlt: Angelina Kiore — photo needed
       - _component: page-sections/people/team-grid/team-item
         name: Fiona Matapo
         role: Trustee
         bio: >-
-          Te Arawa. A Ministry of Education-accredited facilitator
-          specialising in Māori medium education, with over 30 years'
-          experience in education based in Ōtepoti.
+          Te Arawa. A Ministry of Education-accredited facilitator specialising
+          in Māori medium education, with over 30 years' experience in education
+          based in Ōtepoti.
         imageSource: ''
-        imageAlt: 'Fiona Matapo — photo needed'
+        imageAlt: Fiona Matapo — photo needed
       - _component: page-sections/people/team-grid/team-item
         name: Tagiilima Feleti
         role: Trustee
         bio: >-
-          Of Samoan heritage, born in Matautu, Lefaga. Manager of the
-          Pacific Islands Centre at the University of Otago, with close to
-          30 years' experience across the education sector.
+          Of Samoan heritage, born in Matautu, Lefaga. Manager of the Pacific
+          Islands Centre at the University of Otago, with close to 30 years'
+          experience across the education sector.
         imageSource: ''
-        imageAlt: 'Tagiilima Feleti — photo needed'
+        imageAlt: Tagiilima Feleti — photo needed
     colorScheme: inherit
     backgroundColor: base
 description: About Otago Polyfest.
