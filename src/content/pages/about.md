@@ -119,9 +119,9 @@ pageSections:
     eyebrow: Otago Polyfest Team
     heading: Meet the team
     subtext: >-
-      Otago Polyfest is guided by a General Manager and a Board of Trustees from
-      Te Mana Ahua Ake Trust, bringing decades of combined experience across
-      education and the arts. [Add headshot photos when available.]
+      Otago Polyfest is guided by our General Manager and a Board of Trustees
+      from Te Mana Āhua Ake Trust, bringing decades of combined experience
+      across education and the arts. 
     teamMembers:
       - _component: page-sections/people/team-grid/team-item
         name: Pip Laufiso
@@ -139,8 +139,8 @@ pageSections:
           Ngāti Porou, Ngāi Tūhoe. Involved with Otago Polyfest for 26 years,
           Angelina co-chairs Te Mana Ahua Ake Trust and champions identity,
           culture and language for Māori and Pacific tamariki.
-        imageSource: ''
-        imageAlt: Angelina Kiore — photo needed
+        imageSource: /src/assets/images/ange-kiore.jpg
+        imageAlt: Angelina Kiore photo
       - _component: page-sections/people/team-grid/team-item
         name: Fiona Matapo
         role: Trustee
@@ -148,17 +148,17 @@ pageSections:
           Te Arawa. A Ministry of Education-accredited facilitator specialising
           in Māori medium education, with over 30 years' experience in education
           based in Ōtepoti.
-        imageSource: ''
-        imageAlt: Fiona Matapo — photo needed
+        imageSource: /src/assets/images/fiona-matapo.png
+        imageAlt: Fiona Matapo photo
       - _component: page-sections/people/team-grid/team-item
-        name: Tagiilima Feleti
+        name: Lemalu Tagiilima Feleti
         role: Trustee
         bio: >-
           Of Samoan heritage, born in Matautu, Lefaga. Manager of the Pacific
           Islands Centre at the University of Otago, with close to 30 years'
           experience across the education sector.
-        imageSource: ''
-        imageAlt: Tagiilima Feleti — photo needed
+        imageSource: /src/assets/images/lemalu-tagiilima-feleti.jpg
+        imageAlt: Tagiilima Feleti photo
     colorScheme: inherit
     backgroundColor: base
 description: About Otago Polyfest.
