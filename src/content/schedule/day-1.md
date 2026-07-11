@@ -6,7 +6,7 @@ order: 1
 sessions:
   - time: 5:00 pm
     group_name: 'Doors Open '
-    stage:
+    stage: Breeze Arena Entrance
     notes: ''
   - time: 5:30 pm
     group_name: Official Pōwhiri & Opening
