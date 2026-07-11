@@ -93,10 +93,6 @@ backgroundColor:
         name: Accent
       - id: highlight
         name: Highlight
-      - id: muted
-        name: Muted (cyan)
-      - id: brand-muted
-        name: Brand Muted (teal)
 backgroundImage:
   type: object
   comment: Background image configuration for the custom section.
