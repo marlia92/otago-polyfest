@@ -31,7 +31,12 @@ pageSections:
     reverse: false
     colorScheme: inherit
     backgroundColor: base
-    heading_mi: ''
+    backgroundImage:
+      source: /src/assets/images/hero-bg-blobs.png
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+    heading_mi: Kia Maumahara ki tōu Mana Ahua Ake
   - _component: page-sections/events/next-event
     eyebrow:
     heading: Countdown to Otago Polyfest
@@ -144,7 +149,7 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
-      source: ''
+      source: /src/assets/images/hero-bg-blobs.png
       alt: ''
       positionVertical: top
       positionHorizontal: center
