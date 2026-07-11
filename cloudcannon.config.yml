@@ -187,6 +187,10 @@ collections_config:
     icon: pages
     url: /schedule/
     disable_url: false
+    _enabled_editors:
+      - visual
+      - content
+      - data
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
