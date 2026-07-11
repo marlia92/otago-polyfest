@@ -1,0 +1,29 @@
+{
+  "logoSource": "/src/assets/images/logo.svg",
+  "logoAlt": "Otago Polyfest logo",
+  "links": [
+    {
+      "name": "About",
+      "path": "/about/"
+    },
+    {
+      "name": "Schedule",
+      "path": "/schedule/"
+    },
+    {
+      "name": "Sponsors",
+      "path": "/sponsors/"
+    },
+    {
+      "name": "Contact",
+      "path": "/contact/"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "social/facebook",
+      "link": "https://www.facebook.com/OtagoPolyfest/"
+    }
+  ],
+  "footerText": "© 2026 Otago Polyfest. All rights reserved."
+}

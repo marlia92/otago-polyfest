@@ -1,0 +1,54 @@
+{
+  "logoSource": "/src/assets/images/logo.svg",
+  "logoAlt": "Otago Polyfest logo",
+  "navData": [
+    {
+      "name": "Home",
+      "name_mi": "",
+      "path": "/",
+      "children": []
+    },
+    {
+      "name": "About",
+      "name_mi": "",
+      "path": "/about/",
+      "children": []
+    },
+    {
+      "name": "Schedule",
+      "name_mi": "",
+      "path": "/schedule/",
+      "children": []
+    },
+    {
+      "name": "News",
+      "name_mi": "",
+      "path": "/blog/",
+      "children": []
+    },
+    {
+      "name": "Sponsors",
+      "name_mi": "",
+      "path": "/sponsors/",
+      "children": []
+    },
+    {
+      "name": "Contact",
+      "name_mi": "",
+      "path": "/contact/",
+      "children": []
+    }
+  ],
+  "buttonSections": [
+    {
+      "_component": "building-blocks/core-elements/button",
+      "text": "Search",
+      "hideText": true,
+      "link": "/search/",
+      "iconName": "magnifying-glass",
+      "iconPosition": "before",
+      "variant": "secondary",
+      "size": "lg"
+    }
+  ]
+}

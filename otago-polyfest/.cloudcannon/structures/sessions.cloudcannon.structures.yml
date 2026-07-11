@@ -1,0 +1,35 @@
+sessions:
+  style: modal
+  values:
+    - label: Session
+      icon: clock
+      description: A single timed performance slot.
+      value:
+        time: ''
+        group_name: ''
+        stage: ''
+        notes: ''
+      preview:
+        text:
+          - key: time
+          - Add time
+        subtext:
+          - key: group_name
+          - Add group name
+      picker_preview:
+        text: Session
+        subtext: A single timed performance slot.
+        icon: clock
+      _inputs:
+        time:
+          type: text
+          comment: "e.g. 9:00am"
+        group_name:
+          type: text
+          comment: Name of the performing group.
+        stage:
+          type: text
+          comment: "Optional — which stage/area this session is on."
+        notes:
+          type: text
+          comment: Optional extra notes for this session.

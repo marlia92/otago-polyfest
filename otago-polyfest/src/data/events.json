@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "name": "Otago Polyfest — Day 1",
+      "region": "Otago",
+      "location": "[Add venue name], Ōtepoti / Dunedin",
+      "date": "2026-10-16T09:00:00.000Z",
+      "time": "9:00 am"
+    },
+    {
+      "name": "Otago Polyfest — Day 2",
+      "region": "Otago",
+      "location": "[Add venue name], Ōtepoti / Dunedin",
+      "date": "2026-10-17T09:00:00.000Z",
+      "time": "9:00 am"
+    }
+  ]
+}
