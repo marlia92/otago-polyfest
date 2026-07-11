@@ -6,8 +6,10 @@ pageSections:
     eyebrow: OTAGO POLYFEST
     heading: Kia Maumahara ki tōu Mana Ahua Ake
     subtext: >-
-      Join us for a week of performance, kai and whānau at the Breeze FM Arena,
-      Edgar Centre. Everyone is welcome — nau mai, haere mai.
+      Otago Polyfest brings together thousands of performers, schools, whānau
+      and communities each year to celebrate Māori and Pacific excellence
+      through culture, performance and connection. Everyone is welcome — nau
+      mai, haere mai.
     imageSource: /src/assets/images/photos/hero-performer.jpg
     imageAlt: Otago Polyfest performer on stage
     imageAspectRatio: none
@@ -47,12 +49,14 @@ pageSections:
     eyebrow: Our story
     heading: About Otago Polyfest
     subtext: >-
+      For over thirty years Otago Polyfest has celebrated Māori and Pacific
+      culture while creating opportunities for young people to grow in
+      confidence, leadership and cultural pride.
+
+
       Otago Polyfest is an opportunity for children, young people and whānau to
       participate in Māori and Pacific cultural experiences that broaden and
       celebrate their individual and collective cultural identities.
-
-
-      &nbsp;
     buttonSections: []
     imageSource: /src/assets/images/photos/about-performer.jpg
     imageAlt: Otago Polyfest performer
@@ -65,9 +69,26 @@ pageSections:
     eyebrow: What to expect
     heading: A celebration of culture and community
     subtext: >-
-      \[Placeholder — replace with a couple of sentences about what makes Otago
-      Polyfest special: number of schools/groups involved, kapa haka and Pacific
-      performing arts, stalls, whānau atmosphere, etc.\]
+      Every performance tells a story. Every volunteer, sponsor, school and
+      supporter helps make those stories possible.
+
+
+      It takes a village.
+
+
+      8,000+ performers
+
+
+      140 schools & ECE
+
+
+      10,000 attendees
+
+
+      40,000 livestream viewers
+
+
+      100's volunteers
     gap: md
     minItemWidth: 270
     maxItemWidth: 360
@@ -157,11 +178,8 @@ pageSections:
   - _component: page-sections/ctas/cta-center
     heading: Support Otago Polyfest
     subtext: >-
-      \[Placeholder — replace with a call to action for sponsors, volunteers, or
-      performing groups wanting to register.\]
-
-
-      &nbsp;
+      Our partners help create opportunities for thousands of young people
+      \#ittakesavillage
     buttonSections:
       - _component: building-blocks/core-elements/button
         text: Become a Sponsor

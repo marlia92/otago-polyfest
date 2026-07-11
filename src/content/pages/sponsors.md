@@ -5,9 +5,7 @@ pageSections:
   - _component: page-sections/heroes/hero-center
     eyebrow: ''
     heading: Our Sponsors
-    subtext: >-
-      [Placeholder — replace with a thank-you message to sponsors, or an
-      invitation to become one if this section is still being filled out.]
+    subtext: Invest in the future of our young people.
     buttonSections:
       - _component: building-blocks/core-elements/button
         text: Become a Sponsor
@@ -21,10 +19,16 @@ pageSections:
     backgroundColor: base
     paddingVertical: 2xl
   - _component: page-sections/builders/custom-section
-    label: 'Sponsor logos placeholder'
+    label: Sponsor logos placeholder
     contentSections:
       - _component: building-blocks/core-elements/simple-text
-        text: '[Placeholder — add sponsor logos here once confirmed.]'
+        text: >-
+          Every year thousands of young people step onto our stages with pride,
+          confidence and a deep connection to their culture. Behind every
+          performance is a community of educators, volunteers, whānau and
+          partners who help make these opportunities possible. We invite
+          organisations who share our commitment to youth, culture and community
+          to become part of our village.
         alignX: center
         size: md
     maxContentWidth: lg
