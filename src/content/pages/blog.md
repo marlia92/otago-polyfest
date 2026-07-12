@@ -13,7 +13,9 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: 'Updates in the lead-up to Otago Polyfest, plus a wrap-up once the festival wraps.'
+        text: >-
+          Updates in the lead-up to Otago Polyfest, plus a wrap-up once the
+          festival wraps.
         alignX: center
         size: md
     maxContentWidth: 2xl
@@ -22,7 +24,7 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
-      source: ''
+      source: /src/assets/images/hero-bg-blobs.png
       alt: ''
       positionVertical: top
       positionHorizontal: center

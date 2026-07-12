@@ -12,6 +12,11 @@ pageSections:
     buttonSections: []
     colorScheme: inherit
     backgroundColor: base
+    backgroundImage:
+      source: /src/assets/images/hero-bg-blobs.png
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
     paddingVertical: 2xl
   - _component: page-sections/builders/custom-section
     label: Contact form

@@ -13,7 +13,7 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
-      source: ''
+      source: /src/assets/images/hero-bg-blobs.png
       alt: ''
       positionVertical: top
       positionHorizontal: center
