@@ -1,11 +1,14 @@
-label: Hero Center
+label: Hero Split
 icon: hero
-description: Centered hero with heading, supporting text, and buttons.
+description: Prominent section block for landing pages.
 value:
-  _component: page-sections/heroes/hero-center
+  _component: page-sections/heroes/hero-split
   eyebrow: Eyebrow text
   heading: Heading text
-  subtext: Subtext placeholder text that will be replaced with actual content.
+  subtext: Subtitle placeholder text that will be replaced with actual content.
+  imageSource: /src/assets/images/pasifika25-1133x628-auckland-live.jpg
+  imageAlt: Hero image
+  imageAspectRatio: none
   buttonSections:
     - _component: building-blocks/core-elements/button
       text: My Button
@@ -15,6 +18,7 @@ value:
       iconPosition: before
       variant: primary
       size: md
+  reverse: false
   colorScheme: inherit
   backgroundColor: base
   backgroundImage:
@@ -24,12 +28,12 @@ value:
     positionHorizontal: center
 preview:
   text:
-    - Hero Center
+    - Hero Split
   subtext:
     - key: heading
   icon: hero
 picker_preview:
-  text: Hero Center
-  subtext: Centered hero with heading, subtext, and buttons.
+  text: Hero Split
+  subtext: Prominent section block for landing pages.
 _inputs_from_glob:
-  - /src/components/page-sections/heroes/hero-center/hero-center.cloudcannon.inputs.yml
+  - /src/components/page-sections/heroes/hero-split/hero-split.cloudcannon.inputs.yml

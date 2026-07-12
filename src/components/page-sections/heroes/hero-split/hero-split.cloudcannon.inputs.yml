@@ -1,12 +1,12 @@
 eyebrow:
   type: text
-  comment: Optional eyebrow text displayed above the heading.
+  comment: Optional label displayed above the hero heading.
 heading:
   type: text
-  comment: Main heading for the split section.
+  comment: Main heading text for the hero section.
 subtext:
   type: markdown
-  comment: Supporting body copy beneath the heading.
+  comment: Subtitle text displayed below the main heading.
   options:
     blockquote: false
     bold: true
@@ -19,45 +19,42 @@ subtext:
     underline: false
     bulletedlist: false
     numberedlist: false
-buttonSections:
-  type: array
-  comment: Calls-to-action shown beneath the copy block.
-  options:
-    structures: _structures.buttonSections
 imageSource:
   type: image
-  comment: Optional image displayed above the feature list.
+  comment: Feature image to display alongside the hero content.
   options:
     paths:
       uploads: src/assets/images
       static: ""
 imageAlt:
   type: text
-  comment: Alt text describing the image content.
+  comment: Alt text for the feature image for accessibility.
 imageAspectRatio:
   type: select
-  comment: Aspect ratio applied to the image.
+  comment: Set a fixed aspect ratio for the image.
   options:
     values:
       - id: none
         name: None
-      - id: portrait
-        name: Portrait
       - id: square
-        name: Square
+        name: Square (1:1)
       - id: landscape
-        name: Landscape
+        name: Landscape (4:3)
+      - id: portrait
+        name: Portrait (3:4)
       - id: widescreen
-        name: Widescreen
-imageRounded:
-  type: switch
-  comment: Toggles rounded corners on the image.
+        name: Widescreen (16:9)
+buttonSections:
+  type: array
+  comment: Array of button components for call-to-action buttons. See the Button component documentation for more information.
+  options:
+    structures: _structures.buttonSections
 reverse:
   type: switch
-  comment: Flips the layout so the feature list appears before the copy.
+  comment: Whether to reverse the order of content and image (image first, content second).
 colorScheme:
   type: select
-  comment: Color scheme theme applied to the section wrapper.
+  comment: Color scheme theme for the hero.
   options:
     values:
       - id: inherit
@@ -68,7 +65,7 @@ colorScheme:
         name: Contrast
 backgroundColor:
   type: select
-  comment: Background color for the section.
+  comment: Background color for the hero.
   options:
     values:
       - id: none
@@ -81,10 +78,13 @@ backgroundColor:
         name: Accent
       - id: highlight
         name: Highlight
-
+      - id: muted
+        name: Muted (cyan)
+      - id: brand-muted
+        name: Brand Muted (teal)
 backgroundImage:
   type: object
-  comment: Optional background image (sits behind everything in this section).
+  comment: Optional decorative background image for the hero (sits behind everything).
   options:
     preview:
       icon: image
@@ -128,3 +128,4 @@ backgroundImage.positionHorizontal:
         name: Center
       - id: right
         name: Right
+
