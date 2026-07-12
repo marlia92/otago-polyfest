@@ -75,30 +75,56 @@ pageSections:
       alt: ''
       positionVertical: top
       positionHorizontal: center
+  - _component: page-sections/builders/custom-section
+    label: ''
+    contentSections:
+      - _component: building-blocks/core-elements/counter
+        number: 8000
+        prefix:
+        suffix: + performers
+        alignX: start
+        size: 2xl
+      - _component: building-blocks/core-elements/counter
+        number: 140
+        prefix:
+        suffix: schools & ECE
+        alignX: start
+        size: 2xl
+      - _component: building-blocks/core-elements/counter
+        number: 10000
+        prefix:
+        suffix: attendees
+        alignX: start
+        size: 2xl
+      - _component: building-blocks/core-elements/counter
+        number: 40000
+        prefix:
+        suffix: ' livestream viewers'
+        alignX: start
+        size: 2xl
+      - _component: building-blocks/core-elements/counter
+        number: 100
+        prefix:
+        suffix: '''s volunteers'
+        alignX: start
+        size: 2xl
+    maxContentWidth: 2xl
+    paddingHorizontal: md
+    paddingVertical: md
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+    rounded: false
   - _component: page-sections/features/feature-grid
     eyebrow: What to expect
     heading: A celebration of culture and community
     subtext: >-
       Every performance tells a story. Every volunteer, sponsor, school and
       supporter helps make those stories possible.
-
-
-      It takes a village.
-
-
-      8,000+ performers
-
-
-      140 schools & ECE
-
-
-      10,000 attendees
-
-
-      40,000 livestream viewers
-
-
-      100's volunteers
     gap: md
     minItemWidth: 270
     maxItemWidth: 360
@@ -154,7 +180,7 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
-      source: /src/assets/images/hero-bg-blobs.png
+      source:
       alt: ''
       positionVertical: center
       positionHorizontal: center
