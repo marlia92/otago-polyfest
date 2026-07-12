@@ -77,14 +77,17 @@ const duration = 500;
     .counter {
       align-items: start;
       display: flex;
+      flex-direction: column;
       font-size: var(--font-size-heading-2xl);
       font-weight: var(--font-weight-bold);
       margin-top: var(--spacing-lg);
 
       &.alignment-end {
+        align-items: end;
         justify-content: end;
       }
       &.alignment-center {
+        align-items: center;
         justify-content: center;
       }
 
@@ -122,6 +125,9 @@ const duration = 500;
 
       .prefix,
       .suffix {
+        color: var(--color-text-muted);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-normal);
         white-space: pre-wrap;
       }
     }

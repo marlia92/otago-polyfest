@@ -76,41 +76,65 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
   - _component: page-sections/builders/custom-section
-    label: ''
+    label: 'Stats'
     contentSections:
-      - _component: building-blocks/core-elements/counter
-        number: 8000
-        prefix:
-        suffix: + performers
-        alignX: start
-        size: 2xl
-      - _component: building-blocks/core-elements/counter
-        number: 140
-        prefix:
-        suffix: schools & ECE
-        alignX: start
-        size: 2xl
-      - _component: building-blocks/core-elements/counter
-        number: 10000
-        prefix:
-        suffix: attendees
-        alignX: start
-        size: 2xl
-      - _component: building-blocks/core-elements/counter
-        number: 40000
-        prefix:
-        suffix: ' livestream viewers'
-        alignX: start
-        size: 2xl
-      - _component: building-blocks/core-elements/counter
-        number: 100
-        prefix:
-        suffix: '''s volunteers'
-        alignX: start
-        size: 2xl
+      - _component: building-blocks/core-elements/heading
+        text: It takes a village
+        level: h2
+        size: default
+        alignX: center
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/grid
+        label: ''
+        layout: center
+        minItemWidth: 180
+        maxItemWidth: 240
+        gap: lg
+        items:
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 8000
+                prefix:
+                suffix: '+ performers'
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 140
+                prefix:
+                suffix: schools & ECE
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 10000
+                prefix:
+                suffix: attendees
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 40000
+                prefix:
+                suffix: livestream viewers
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 100
+                prefix:
+                suffix: '+ volunteers'
+                alignX: center
+                size: 2xl
     maxContentWidth: 2xl
     paddingHorizontal: md
-    paddingVertical: md
+    paddingVertical: xl
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
