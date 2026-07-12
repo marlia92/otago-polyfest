@@ -12,6 +12,11 @@ pageSections:
     buttonSections: []
     colorScheme: inherit
     backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
     paddingVertical: 2xl
   - _component: page-sections/builders/custom-section
     label: ''
@@ -60,6 +65,11 @@ pageSections:
         alignX: start
         size: md
       - _component: building-blocks/core-elements/heading
+        text: My Heading
+        level: h2
+        size: default
+        alignX: start
+        iconPosition: before
       - _component: building-blocks/core-elements/heading
         text: Our logos
         level: h2
@@ -133,12 +143,6 @@ pageSections:
         reverse: false
         reverseOrderOnMobile: false
         gap: lg
-      - _component: building-blocks/core-elements/simple-text
-        text: >-
-          Source: McCaw, C. &amp; McKinlay, P. (2012). A Community Project: The
-          Making of Te Moananui Ā Kiwa. *Scope: (Art &amp; Design)*, 7, 120–125.
-        alignX: start
-        size: sm
     maxContentWidth: lg
     paddingHorizontal: md
     paddingVertical: xl
@@ -196,5 +200,10 @@ pageSections:
         imageAlt: Tagiilima Feleti photo
     colorScheme: inherit
     backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
 description: About Otago Polyfest.
 ---
