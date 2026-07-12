@@ -34,7 +34,7 @@ pageSections:
     colorScheme: inherit
     backgroundColor: base
     backgroundImage:
-      source: /src/assets/images/hero-bg-blobs.png
+      source:
       alt: ''
       positionVertical: top
       positionHorizontal: center
@@ -44,6 +44,11 @@ pageSections:
     heading: Countdown to Otago Polyfest
     colorScheme: contrast
     backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
     paddingVertical: 2xl
   - _component: page-sections/features/feature-split
     eyebrow: Our story
@@ -65,6 +70,11 @@ pageSections:
     reverse: true
     colorScheme: default
     backgroundColor: base
+    backgroundImage:
+      source: /src/assets/images/hero-bg-blobs.png
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
   - _component: page-sections/features/feature-grid
     eyebrow: What to expect
     heading: A celebration of culture and community
@@ -114,67 +124,11 @@ pageSections:
         iconColor: yellow
     colorScheme: contrast
     backgroundColor: base
-  - _component: page-sections/builders/custom-section
-    label: 'Graphic Strip '
-    contentSections:
-      - _component: building-blocks/wrappers/grid
-        label: ''
-        layout: center
-        minItemWidth: 150
-        maxItemWidth: 200
-        items:
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/image
-                source: /src/assets/images/brand/OtagoPolyfest_Tama2.png
-                alt: Illustrated Otago Polyfest character
-                rounded: false
-                aspectRatio: none
-                positionVertical: center
-                positionHorizontal: center
-                priority: false
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/image
-                source: /src/assets/images/brand/OtagoPolyfest_Kotiro1-Transparent.png
-                alt: Illustrated Otago Polyfest character
-                rounded: false
-                aspectRatio: none
-                positionVertical: center
-                positionHorizontal: center
-                priority: false
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/image
-                source: /src/assets/images/group-5.png
-                alt: ''
-                rounded: false
-                aspectRatio: portrait
-                positionVertical: center
-                positionHorizontal: center
-                priority: false
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/image
-                source: /src/assets/images/brand/OtagoPolyfest_Kotiro2-Transparent.png
-                alt: Illustrated Otago Polyfest character
-                rounded: false
-                aspectRatio: none
-                positionVertical: center
-                positionHorizontal: center
-                priority: false
-        gap: lg
-    maxContentWidth: lg
-    paddingHorizontal: md
-    paddingVertical: xl
-    colorScheme: inherit
-    backgroundColor: base
     backgroundImage:
-      source: /src/assets/images/hero-bg-blobs.png
+      source: ''
       alt: ''
       positionVertical: top
       positionHorizontal: center
-    rounded: false
   - _component: page-sections/ctas/cta-center
     heading: Support Otago Polyfest
     subtext: >-
@@ -197,8 +151,13 @@ pageSections:
         iconPosition: before
         variant: primary
         size: md
-    colorScheme: contrast
-    backgroundColor: surface
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: /src/assets/images/hero-bg-blobs.png
+      alt: ''
+      positionVertical: center
+      positionHorizontal: center
     rounded: false
 description: Home page for Otago Polyfest
 ---
