@@ -75,74 +75,6 @@ pageSections:
       alt: ''
       positionVertical: top
       positionHorizontal: center
-  - _component: page-sections/builders/custom-section
-    label: 'Stats'
-    contentSections:
-      - _component: building-blocks/core-elements/heading
-        text: It takes a village
-        level: h2
-        size: default
-        alignX: center
-        iconName:
-        iconPosition: before
-      - _component: building-blocks/wrappers/grid
-        label: ''
-        layout: center
-        minItemWidth: 180
-        maxItemWidth: 240
-        gap: lg
-        items:
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/counter
-                number: 8000
-                prefix:
-                suffix: '+ performers'
-                alignX: center
-                size: 2xl
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/counter
-                number: 140
-                prefix:
-                suffix: schools & ECE
-                alignX: center
-                size: 2xl
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/counter
-                number: 10000
-                prefix:
-                suffix: attendees
-                alignX: center
-                size: 2xl
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/counter
-                number: 40000
-                prefix:
-                suffix: livestream viewers
-                alignX: center
-                size: 2xl
-          - _component: building-blocks/wrappers/grid/grid-item
-            contentSections:
-              - _component: building-blocks/core-elements/counter
-                number: 100
-                prefix:
-                suffix: '+ volunteers'
-                alignX: center
-                size: 2xl
-    maxContentWidth: 2xl
-    paddingHorizontal: md
-    paddingVertical: xl
-    colorScheme: inherit
-    backgroundColor: base
-    backgroundImage:
-      source: ''
-      alt: ''
-      positionVertical: top
-      positionHorizontal: center
-    rounded: false
   - _component: page-sections/features/feature-grid
     eyebrow: What to expect
     heading: A celebration of culture and community
@@ -179,6 +111,74 @@ pageSections:
       alt: ''
       positionVertical: top
       positionHorizontal: center
+  - _component: page-sections/builders/custom-section
+    label: Stats
+    contentSections:
+      - _component: building-blocks/core-elements/heading
+        text: It takes a village
+        level: h2
+        size: default
+        alignX: center
+        iconName:
+        iconPosition: before
+      - _component: building-blocks/wrappers/grid
+        label: ''
+        layout: center
+        minItemWidth: 180
+        maxItemWidth: 240
+        items:
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 8000
+                prefix:
+                suffix: + performers
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 140
+                prefix:
+                suffix: schools & ECE
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 10000
+                prefix:
+                suffix: attendees
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 40000
+                prefix:
+                suffix: livestream viewers
+                alignX: center
+                size: 2xl
+          - _component: building-blocks/wrappers/grid/grid-item
+            contentSections:
+              - _component: building-blocks/core-elements/counter
+                number: 100
+                prefix:
+                suffix: + volunteers
+                alignX: center
+                size: 2xl
+        gap: lg
+    maxContentWidth: 2xl
+    paddingHorizontal: md
+    paddingVertical: xl
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+    rounded: false
   - _component: page-sections/ctas/cta-center
     heading: Support Otago Polyfest
     subtext: >-
@@ -201,7 +201,7 @@ pageSections:
         iconPosition: before
         variant: primary
         size: md
-    colorScheme: inherit
+    colorScheme: contrast
     backgroundColor: base
     backgroundImage:
       source:
