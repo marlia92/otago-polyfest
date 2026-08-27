@@ -8,7 +8,7 @@ description: >-
   stadium roof—all in support of a cause they believe in.
 pubDate: 2026-06-20T00:00:00Z
 author: Otago Polyfest
-image: ''
+image: /src/assets/images/thows-022-toss-the-boss-210526-email.jpg
 ---
 # Taking the Leap for Otago Polyfest
 
