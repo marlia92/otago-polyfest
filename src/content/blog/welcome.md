@@ -9,7 +9,7 @@ author: Otago Polyfest
 ---
 &nbsp;
 
-<p><img alt="Audience haka tautoko" loading="lazy" title="Audience haka tautoko" src="/src/assets/images/photos/venue-crowd.jpg" /></p>
+<p><img alt="Audience haka tautoko" loading="lazy" title="Audience haka tautoko" src="/images/venue-crowd.jpg" /></p>
 
 We're excited to launch our new website as we begin another incredible festival journey. Whether you're a performer, kaiako, tutor, whānau member, volunteer, sponsor, stallholder or first-time visitor, this website has been designed to make it easier than ever to stay connected with everything happening at Otago Polyfest.
 

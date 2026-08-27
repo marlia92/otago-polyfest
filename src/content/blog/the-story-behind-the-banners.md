@@ -11,7 +11,7 @@ Towering above the stage, these vibrant artworks have become synonymous with Ota
 
 What many people don't know is how these taonga came to be.
 
-<p><img alt="Te Moananui ā Kiwa banner design" loading="lazy" title="Te Moananui ā Kiwa banner design" src="/src/assets/images/op-original-banner-design.jpg" /></p>
+<p><img alt="Te Moananui ā Kiwa banner design" loading="lazy" title="Te Moananui ā Kiwa banner design" src="/images/op-original-banner-design.jpg" /></p>
 
 ## A Community Collaboration
 
