@@ -8,8 +8,11 @@ description: >-
   stadium roof—all in support of a cause they believe in.
 pubDate: 2026-06-20T00:00:00Z
 author: Otago Polyfest
+image: ''
 ---
 # Taking the Leap for Otago Polyfest
+
+![]()
 
 Sometimes supporting Otago Polyfest means months of planning, countless meetings and late nights behind a computer.
 
