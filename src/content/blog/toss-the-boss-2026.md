@@ -11,8 +11,6 @@ author: Otago Polyfest
 ---
 # Taking the Leap for Otago Polyfest
 
-![]()
-
 Sometimes supporting Otago Polyfest means months of planning, countless meetings and late nights behind a computer.
 
 Sometimes... it means stepping backwards off the roof of Forsyth Barr Stadium.
