@@ -1,0 +1,246 @@
+---
+import Icon from "@core-elements/icon/Icon.astro";
+import BilingualLabel from "@components/utils/BilingualLabel.astro";
+
+const { navData = [], class: className, _component, ...htmlAttributes } = Astro.props as Props;
+
+// Check if item is current page
+function isCurrentPage(item) {
+  return Boolean(item.path && Astro.url.pathname === item.path);
+}
+
+// Check if any child is current page (recursive)
+function hasCurrentChild(item) {
+  if (isCurrentPage(item)) return true;
+  return Boolean(item.children?.some((child) => hasCurrentChild(child)));
+}
+
+// Create navigation item data
+function createNavItemData(item, level, parentGroupId) {
+  const hasChildren = Boolean(item.children?.length);
+
+  return {
+    ...item,
+    hasChildren,
+    level,
+    contentId: `bar-dropdown-content-${crypto.randomUUID()}`,
+    isCurrent: isCurrentPage(item),
+    hasCurrent: hasCurrentChild(item),
+    parentGroupId: parentGroupId || crypto.randomUUID(),
+  };
+}
+---
+
+<ul class:list={["nav-list", "bar", className]} {...htmlAttributes}>
+  {
+    navData.map((item) => {
+      const itemData = createNavItemData(item, "top");
+
+      if (!itemData.hasChildren) {
+        return (
+          <li class="nav-item">
+            <a href={itemData.path} aria-current={itemData.isCurrent ? "page" : undefined}>
+              <BilingualLabel en={itemData.name} mi={itemData.name_mi} />
+            </a>
+          </li>
+        );
+      }
+
+      return (
+        <li class="nav-item has-children">
+          <label
+            class="nav-item-trigger"
+            role="button"
+            tabindex="0"
+            aria-controls={itemData.contentId}
+            aria-expanded={itemData.hasCurrent}
+            aria-current={itemData.isCurrent ? "page" : undefined}
+          >
+            <BilingualLabel en={itemData.name} mi={itemData.name_mi} />
+            <span class="nav-item-icon">
+              <Icon name="chevron-right" size="none" aria-hidden="true" />
+            </span>
+          </label>
+          <div
+            id={itemData.contentId}
+            class="nav-item-nested"
+            role="region"
+            aria-label={`${itemData.name} submenu`}
+          >
+            <ul class="nav-list">
+              {itemData.children!.map((child) => {
+                const childData = createNavItemData(child, "child", itemData.parentGroupId);
+
+                if (!childData.hasChildren) {
+                  return (
+                    <li class="nav-item">
+                      <a
+                        href={childData.path}
+                        aria-current={childData.isCurrent ? "page" : undefined}
+                      >
+                        <BilingualLabel en={childData.name} mi={childData.name_mi} />
+                      </a>
+                    </li>
+                  );
+                }
+
+                return (
+                  <li class="nav-item has-children">
+                    <label
+                      class="nav-item-trigger"
+                      role="button"
+                      tabindex="0"
+                      aria-controls={childData.contentId}
+                      aria-expanded={childData.hasCurrent}
+                      aria-current={childData.isCurrent ? "page" : undefined}
+                    >
+                      <BilingualLabel en={childData.name} mi={childData.name_mi} />
+                      <span class="nav-item-icon">
+                        <Icon name="chevron-right" size="none" aria-hidden="true" />
+                      </span>
+                    </label>
+                    <div
+                      id={childData.contentId}
+                      class="nav-item-nested"
+                      role="region"
+                      aria-label={`${childData.name} submenu`}
+                    >
+                      <ul class="nav-list">
+                        {childData.children!.map((grandChild) => {
+                          const grandChildData = createNavItemData(
+                            grandChild,
+                            "child",
+                            childData.parentGroupId
+                          );
+
+                          return (
+                            <li class="nav-item">
+                              <a
+                                href={grandChildData.path}
+                                aria-current={grandChildData.isCurrent ? "page" : undefined}
+                              >
+                                <BilingualLabel en={grandChildData.name} mi={grandChildData.name_mi} />
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style lang="pcss" is:global>
+  @layer components {
+    .bar.nav-list {
+      align-items: center;
+      display: flex;
+      gap: var(--spacing-lg);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      > .nav-item {
+        position: relative;
+
+        > a,
+        > .nav-item-trigger {
+          align-items: center;
+          border-radius: var(--radius-xs);
+          color: var(--color-text-strong);
+          cursor: pointer;
+          display: flex;
+          font-weight: var(--font-weight-semibold);
+          gap: var(--spacing-xs);
+          padding: var(--spacing-sm) var(--spacing-xs);
+          text-decoration: none;
+          transition: background var(--animation-normal) ease-in-out;
+          user-select: none;
+          white-space: nowrap;
+
+          &[aria-current="page"] {
+            text-decoration: underline dotted;
+            text-decoration-color: var(--color-text-muted);
+            text-underline-offset: 3px;
+          }
+
+          &:hover,
+          &:focus-visible {
+            background: var(--color-state-hover);
+          }
+        }
+
+        .nav-item-icon {
+          color: var(--color-text-muted);
+          display: inline-flex;
+          transition:
+            color var(--animation-normal) ease-in-out,
+            transform var(--animation-normal) ease-in-out;
+        }
+
+        &:hover .nav-item-icon,
+        &:focus-within .nav-item-icon {
+          color: var(--color-text-strong);
+        }
+      }
+
+      .nav-item-nested {
+        background: var(--color-bg-surface);
+        border: 1px solid var(--color-border-subtle);
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-md, 0 8px 24px rgba(0, 0, 0, 0.12));
+        display: none;
+        left: 0;
+        min-width: 220px;
+        padding: var(--spacing-xs);
+        position: absolute;
+        top: 100%;
+        z-index: var(--layer-4);
+
+        .nav-list {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .nav-item {
+          > a,
+          > .nav-item-trigger {
+            padding: var(--spacing-sm) var(--spacing-md);
+            width: 100%;
+          }
+        }
+
+        .nav-item-nested {
+          left: 100%;
+          top: 0;
+        }
+      }
+
+      > .nav-item.has-children:hover > .nav-item-nested,
+      > .nav-item.has-children:focus-within > .nav-item-nested {
+        display: block;
+      }
+
+      .nav-item.has-children:hover > .nav-item-nested,
+      .nav-item.has-children:focus-within > .nav-item-nested {
+        display: block;
+      }
+
+      .nav-item.has-children:hover > .nav-item-trigger > .nav-item-icon,
+      .nav-item.has-children:focus-within > .nav-item-trigger > .nav-item-icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+</style>

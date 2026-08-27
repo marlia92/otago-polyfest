@@ -1,0 +1,128 @@
+---
+import Icon from "@core-elements/icon/Icon.astro";
+
+const {
+  label = "Carousel",
+  slideWidthPercent = 100,
+  minSlideWidth = 0,
+  autoPlay = false,
+  autoScroll = false,
+  autoPlayInterval = 5000,
+  class: className,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+
+const carouselId = `carousel-${crypto.randomUUID()}`;
+const styleVars = `--slide-width: ${slideWidthPercent}%; --min-slide-width: ${minSlideWidth}px;`;
+---
+
+<div
+  class:list={["carousel", className]}
+  id={carouselId}
+  data-autoplay={autoPlay ? "true" : "false"}
+  data-autoscroll={autoScroll ? "true" : "false"}
+  data-autoplay-interval={autoPlayInterval}
+  {...htmlAttributes}
+>
+  <div class="carousel-track" role="group" aria-label={label} style={styleVars}>
+    <slot />
+  </div>
+
+  <div class="carousel-controls">
+    <button type="button" class="carousel-prev" aria-label={`Previous slide in ${label}`}>
+      <Icon name="chevron-right" size="none" aria-hidden="true" class="carousel-arrow-left" />
+    </button>
+    <button type="button" class="carousel-next" aria-label={`Next slide in ${label}`}>
+      <Icon name="chevron-right" size="none" aria-hidden="true" />
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll<HTMLElement>(".carousel").forEach((carousel) => {
+      const track = carousel.querySelector<HTMLElement>(".carousel-track");
+      const prevBtn = carousel.querySelector<HTMLButtonElement>(".carousel-prev");
+      const nextBtn = carousel.querySelector<HTMLButtonElement>(".carousel-next");
+      if (!track) return;
+
+      function scrollByAmount(direction: number) {
+        const firstSlide = track?.querySelector<HTMLElement>(":scope > *");
+        const amount = (firstSlide?.offsetWidth || track!.clientWidth) * direction;
+        track?.scrollBy({ left: amount, behavior: "smooth" });
+      }
+
+      prevBtn?.addEventListener("click", () => scrollByAmount(-1));
+      nextBtn?.addEventListener("click", () => scrollByAmount(1));
+
+      const autoPlay = carousel.dataset.autoplay === "true";
+      const autoScroll = carousel.dataset.autoscroll === "true";
+      const interval = parseInt(carousel.dataset.autoplayInterval || "5000", 10);
+
+      if (autoPlay || autoScroll) {
+        setInterval(() => {
+          const atEnd = track!.scrollLeft + track!.clientWidth >= track!.scrollWidth - 2;
+          if (atEnd) {
+            track!.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            scrollByAmount(1);
+          }
+        }, interval);
+      }
+    });
+  });
+</script>
+
+<style lang="pcss" is:global>
+  @layer components {
+    .carousel {
+      position: relative;
+
+      .carousel-track {
+        display: flex;
+        gap: var(--spacing-md);
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        > * {
+          scroll-snap-align: start;
+        }
+      }
+
+      .carousel-controls {
+        display: flex;
+        gap: var(--spacing-sm);
+        justify-content: center;
+        margin-top: var(--spacing-md);
+      }
+
+      .carousel-prev,
+      .carousel-next {
+        align-items: center;
+        background: var(--color-bg-surface);
+        border: 1px solid var(--color-border-subtle);
+        border-radius: var(--radius-full, 999px);
+        cursor: pointer;
+        display: inline-flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
+
+        &:hover {
+          background: var(--color-state-hover);
+        }
+      }
+
+      .carousel-arrow-left {
+        transform: rotate(180deg);
+      }
+    }
+  }
+</style>
