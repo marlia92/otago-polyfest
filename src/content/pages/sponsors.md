@@ -244,10 +244,22 @@ pageSections:
                     text: >-
                       Schools with the capacity can make a voluntary $3
                       contribution per student to support the festival. Contact
-                      our [Performer Liaison]
-                      (mailto:performers@otagopolyfest.nz) for details.
+                      our Performer Liaison for details.
                     alignX: start
                     size: sm
+                  - _component: building-blocks/wrappers/button-group
+                    label:
+                    buttonSections:
+                      - _component: building-blocks/core-elements/button
+                        text: Get in touch
+                        hideText: false
+                        link: 'mailto: performers@otagopolyfest.nz'
+                        iconName: ''
+                        iconPosition: before
+                        variant: tertiary
+                        size: sm
+                    direction: row
+                    alignX: start
                 maxContentWidth: 3xl
                 paddingHorizontal: lg
                 paddingVertical: lg
@@ -384,7 +396,7 @@ pageSections:
           If you require a receipt for tax purposes, please email
           [admin@otagopolyfest.nz](mailto:admin@otagopolyfest.nz) with the name
           used in the deposit reference, the exact amount deposited, and the
-          date of the deposit. 
+          date of the deposit.
         alignX: center
         size: sm
     maxContentWidth: md

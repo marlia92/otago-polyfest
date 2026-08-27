@@ -1,14 +1,13 @@
 ---
 _schema: default
-title: 'Our Community, Our Festival, Our Future'
+title: Our Community, Our Festival, Our Future
 description: >-
   Otago Polyfest 2026 is going ahead, and we're building a more resilient
   festival for 2027 and beyond — here's how you can be part of it.
 pubDate: 2026-08-01T00:00:00Z
 author: Otago Polyfest
-image: /src/assets/images/photos/hero-performer.jpg
+image: /src/assets/images/img-0375-vsco.jpeg
 ---
-
 For more than 33 years, Otago Polyfest has been a beating heart of our community — a place where all tamariki and rangatahi can stand tall, celebrate our collective heritage and express their identity through the power of Toi Ihiihi.
 
 This year, that heartbeat continues.
