@@ -87,21 +87,17 @@ pageSections:
     features:
       - _component: page-sections/features/feature-grid/feature-item
         title: Performances
-        description: >-
-          \[Replace\] Kapa haka and Pacific performing arts groups from across
-          the region.
+        description: Kapa haka and Pacific performing arts groups from across the region.
         iconName: musical-note
         iconColor: blue
       - _component: page-sections/features/feature-grid/feature-item
         title: Community
-        description: \[Replace\] Whānau, schools, and community groups coming together.
+        description: Whānau, schools, and community groups coming together.
         iconName: user-group
         iconColor: red
       - _component: page-sections/features/feature-grid/feature-item
         title: Culture
-        description: >-
-          \[Replace\] Celebrating the diverse cultures of the Pacific and
-          Aotearoa.
+        description: Celebrating the diverse cultures of the Pacific and Aotearoa.
         iconName: globe-asia-australia
         iconColor: yellow
     colorScheme: contrast
