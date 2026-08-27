@@ -1,10 +1,10 @@
 ---
 _schema: default
-title: Sponsors
+title: Support Us
 pageSections:
   - _component: page-sections/heroes/hero-center
     eyebrow: ''
-    heading: Our Sponsors
+    heading: Support Us
     subtext: Invest in the future of our young people.
     buttonSections:
       - _component: building-blocks/core-elements/button
