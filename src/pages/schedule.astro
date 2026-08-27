@@ -34,7 +34,6 @@ const days = (await getCollection('schedule')).sort((a, b) => a.data.order - b.d
                 <tr>
                   <th scope="col">Time</th>
                   <th scope="col">Group</th>
-                  <th scope="col">Stage</th>
                 </tr>
               </thead>
               <tbody>
@@ -45,7 +44,6 @@ const days = (await getCollection('schedule')).sort((a, b) => a.data.order - b.d
                       {session.group_name}
                       {session.notes && <span class="schedule-notes"> — {session.notes}</span>}
                     </td>
-                    <td>{session.stage || '—'}</td>
                   </tr>
                 ))}
               </tbody>
