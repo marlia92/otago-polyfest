@@ -99,6 +99,13 @@ collections_config:
       pubDate:
         type: date
         comment: Date this post was published.
+      image:
+        type: image
+        comment: Preview image shown on the News listing page and at the top of the post.
+        options:
+          paths:
+            uploads: src/assets/images
+            static: ""
     add_options:
       - name: Add News Post
         icon: newspaper

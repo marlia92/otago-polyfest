@@ -6,6 +6,7 @@ description: >-
   certainly stood beneath our iconic Te Moananui ā Kiwa banners.
 pubDate: 2026-07-11T00:00:00Z
 author: Otago Polyfest
+image: /src/assets/images/op-original-banner-design.jpg
 ---
 Towering above the stage, these vibrant artworks have become synonymous with Otago Polyfest. They frame thousands of performances each year and provide a powerful reminder that every group who steps onto our stage is part of a much larger story.
 

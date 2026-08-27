@@ -6,6 +6,7 @@ description: >-
   festival.
 pubDate: 2026-07-11T00:00:00Z
 author: Otago Polyfest
+image: /src/assets/images/photos/venue-crowd.jpg
 ---
 &nbsp;
 
