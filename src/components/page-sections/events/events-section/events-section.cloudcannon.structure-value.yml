@@ -1,0 +1,21 @@
+_component: page-sections/events/events-section
+eyebrow: ''
+heading: Upcoming Events
+colorScheme: inherit
+backgroundColor: base
+backgroundImage:
+  source: ''
+  alt: ''
+  positionVertical: top
+  positionHorizontal: center
+preview:
+  text:
+    - Events Section
+  subtext:
+    - key: heading
+  icon: schedule
+picker_preview:
+  text: Events Section
+  subtext: A grid listing upcoming events.
+_inputs_from_glob:
+  - /src/components/page-sections/events/events-section/events-section.cloudcannon.inputs.yml

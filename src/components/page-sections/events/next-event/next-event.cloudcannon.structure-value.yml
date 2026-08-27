@@ -1,0 +1,22 @@
+_component: page-sections/events/next-event
+eyebrow: ''
+heading: Countdown to Otago Polyfest
+colorScheme: inherit
+backgroundColor: base
+backgroundImage:
+  source: ''
+  alt: ''
+  positionVertical: top
+  positionHorizontal: center
+paddingVertical: 2xl
+preview:
+  text:
+    - Next Event Countdown
+  subtext:
+    - key: heading
+  icon: schedule
+picker_preview:
+  text: Next Event Countdown
+  subtext: Live countdown timer to the next upcoming event.
+_inputs_from_glob:
+  - /src/components/page-sections/events/next-event/next-event.cloudcannon.inputs.yml

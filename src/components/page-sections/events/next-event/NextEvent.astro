@@ -1,0 +1,170 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import eventsData from "@data/events.json";
+
+const {
+  eyebrow = "",
+  heading = "",
+  colorScheme = "inherit",
+  backgroundColor,
+  backgroundImage,
+  paddingVertical = "4xl",
+  class: className,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+
+type EventEntry = {
+  name: string;
+  region?: string;
+  location?: string;
+  date: string;
+  time?: string;
+};
+
+const events: EventEntry[] = (eventsData as { events: EventEntry[] }).events || [];
+
+const now = Date.now();
+const upcoming = events
+  .filter((e) => new Date(e.date).getTime() > now)
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+const nextEvent = upcoming[0] || events[events.length - 1];
+const targetIso = nextEvent?.date || "";
+---
+
+<CustomSection
+  class:list={["next-event", className]}
+  maxContentWidth="lg"
+  paddingHorizontal="lg"
+  paddingVertical={paddingVertical}
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  backgroundImage={backgroundImage}
+  {...htmlAttributes}
+>
+  {eyebrow && (
+    <p class="next-event-eyebrow">{eyebrow}</p>
+  )}
+  {heading && (
+    <Heading level="h2" size="default" alignX="center" text={heading} />
+  )}
+
+  {nextEvent && (
+    <>
+      <p class="next-event-details">
+        {nextEvent.name}
+        {nextEvent.location && <> — {nextEvent.location}</>}
+      </p>
+
+      <div class="countdown" data-target={targetIso}>
+        <div class="countdown-box">
+          <span class="countdown-number" data-unit="days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" data-unit="hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" data-unit="minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-number" data-unit="seconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </>
+  )}
+</CustomSection>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll<HTMLElement>(".countdown").forEach((el) => {
+      const target = new Date(el.dataset.target || "").getTime();
+      if (!target || Number.isNaN(target)) return;
+
+      const daysEl = el.querySelector<HTMLElement>('[data-unit="days"]');
+      const hoursEl = el.querySelector<HTMLElement>('[data-unit="hours"]');
+      const minutesEl = el.querySelector<HTMLElement>('[data-unit="minutes"]');
+      const secondsEl = el.querySelector<HTMLElement>('[data-unit="seconds"]');
+
+      function pad(n: number) {
+        return n.toString().padStart(2, "0");
+      }
+
+      function tick() {
+        const diff = Math.max(target - Date.now(), 0);
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        if (daysEl) daysEl.textContent = pad(days);
+        if (hoursEl) hoursEl.textContent = pad(hours);
+        if (minutesEl) minutesEl.textContent = pad(minutes);
+        if (secondsEl) secondsEl.textContent = pad(seconds);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    });
+  });
+</script>
+
+<style lang="pcss" is:global>
+  @layer page-sections {
+    .next-event {
+      text-align: center;
+
+      .next-event-eyebrow {
+        color: var(--color-text-muted);
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-semibold);
+        letter-spacing: 0.06em;
+        margin: 0 0 var(--spacing-xs);
+        text-transform: uppercase;
+      }
+
+      .next-event-details {
+        color: var(--color-text-muted);
+        font-size: var(--font-size-lg);
+        margin: var(--spacing-sm) 0 var(--spacing-xl);
+      }
+
+      .countdown {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+        justify-content: center;
+      }
+
+      .countdown-box {
+        background: var(--color-bg-surface);
+        border-radius: var(--radius-md);
+        min-width: 110px;
+        padding: var(--spacing-lg) var(--spacing-md);
+      }
+
+      .countdown-number {
+        display: block;
+        font-size: var(--font-size-heading-2xl);
+        font-weight: var(--font-weight-bold);
+        line-height: 1;
+      }
+
+      .countdown-label {
+        color: var(--color-text-muted);
+        display: block;
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-semibold);
+        letter-spacing: 0.06em;
+        margin-top: var(--spacing-xs);
+        text-transform: uppercase;
+      }
+    }
+  }
+</style>
