@@ -6,14 +6,12 @@ pageSections:
         _component: page-sections/heroes/hero-center
         eyebrow:
         heading: Search
-        subtext: >-
-            Everything on your site is just one search away. (Free static search
-            courtesy of [Pagefind](https://pagefind.app/) 💙)
+        subtext:
         buttonSections: []
         colorScheme: inherit
         backgroundColor: base
         backgroundImage:
-            source: /src/assets/images/hero-bg-blobs.png
+            source:
             alt: ''
             positionVertical: center
             positionHorizontal: center
