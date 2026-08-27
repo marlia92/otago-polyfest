@@ -1,4 +1,6 @@
 paths:
+  uploads: public/images
+  static: public
   schemas:
     hero-split: src/components/page-sections/heroes/hero-split/HeroSplit.astro
 collections_config:
