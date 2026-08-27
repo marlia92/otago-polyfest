@@ -182,7 +182,7 @@ pageSections:
   - _component: page-sections/ctas/cta-center
     heading: Support Otago Polyfest
     subtext: >-
-      Our partners help create opportunities for thousands of young people
+      Your support helps create opportunities for thousands of young people
       \#ittakesavillage
     buttonSections:
       - _component: building-blocks/core-elements/button
