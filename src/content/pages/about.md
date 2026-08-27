@@ -65,12 +65,6 @@ pageSections:
         alignX: start
         size: md
       - _component: building-blocks/core-elements/heading
-        text: My Heading
-        level: h2
-        size: default
-        alignX: start
-        iconPosition: before
-      - _component: building-blocks/core-elements/heading
         text: Our logos
         level: h2
         size: default
