@@ -116,7 +116,7 @@ pageSections:
       positionHorizontal: center
     rounded: false
   - _component: page-sections/builders/custom-section
-    label: 'Why your support matters'
+    label: Why your support matters
     contentSections:
       - _component: building-blocks/core-elements/heading
         text: Our community, our festival, our future
@@ -127,11 +127,13 @@ pageSections:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
         text: >-
-          For more than 33 years, Otago Polyfest has been a beating heart of our community — a place where
-          all tamariki and rangatahi can stand tall, celebrate our collective heritage and express their
-          identity through the power of Toi Ihiihi. Polyfest has never been built by a single organisation.
-          It's shaped every year by tamariki, kaiako, tutors, whānau, volunteers, schools, community
-          organisations, funders, sponsors and supporters who each invest their time, energy and aroha.
+          For more than 33 years, Otago Polyfest has been a beating heart of our
+          community — a place where all tamariki and rangatahi can stand tall,
+          celebrate our collective heritage and express their identity through
+          the power of Toi Ihiihi. Polyfest has never been built by a single
+          organisation. It's shaped every year by tamariki, kaiako, tutors,
+          whānau, volunteers, schools, community organisations, funders,
+          sponsors and supporters who each invest their time, energy and aroha.
           #ittakesavillage
         alignX: center
         size: md
@@ -147,7 +149,7 @@ pageSections:
       positionHorizontal: center
     rounded: false
   - _component: page-sections/builders/custom-section
-    label: 'Ways to support'
+    label: Ways to support
     contentSections:
       - _component: building-blocks/core-elements/heading
         text: Ways to support
@@ -157,7 +159,9 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: 'There are many ways to be part of the village that keeps Polyfest going.'
+        text: >-
+          There are many ways to be part of the village that keeps Polyfest
+          going.
         alignX: center
         size: md
       - _component: building-blocks/wrappers/grid
@@ -165,7 +169,6 @@ pageSections:
         layout: center
         minItemWidth: 240
         maxItemWidth: 320
-        gap: md
         items:
           - _component: building-blocks/wrappers/grid/grid-item
             contentSections:
@@ -181,8 +184,9 @@ pageSections:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
                     text: >-
-                      Every contribution helps us build a stronger foundation for the future. Bank details
-                      are below, or get in touch to arrange a koha.
+                      Every contribution helps us build a stronger foundation
+                      for the future. Bank details are below, or get in touch to
+                      arrange a koha.
                     alignX: start
                     size: sm
                 maxContentWidth: 3xl
@@ -205,14 +209,15 @@ pageSections:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
                     text: >-
-                      Our festival relies on the mahi aroha of incredible kaimahi. Give your time, skills or
-                      energy and become part of the team behind Polyfest.
+                      Our festival relies on the mahi aroha of incredible
+                      kaimahi. Give your time, skills or energy and become part
+                      of the team behind Polyfest.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
                     text: Register to volunteer
                     hideText: false
-                    link: 'https://forms.gle/ZmLkAb4DN9y3GHqc9'
+                    link: https://forms.gle/ZmLkAb4DN9y3GHqc9
                     iconName: ''
                     iconPosition: before
                     variant: tertiary
@@ -237,8 +242,10 @@ pageSections:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
                     text: >-
-                      Schools with the capacity can make a voluntary $3 contribution per student to support
-                      the festival. Contact our Performer Liaison for details.
+                      Schools with the capacity can make a voluntary $3
+                      contribution per student to support the festival. Contact
+                      our [Performer Liaison]
+                      (mailto:performers@otagopolyfest.nz) for details.
                     alignX: start
                     size: sm
                 maxContentWidth: 3xl
@@ -253,7 +260,7 @@ pageSections:
                 label: ''
                 contentSections:
                   - _component: building-blocks/core-elements/heading
-                    text: Start a community fundraiser
+                    text: Start a fundraiser
                     level: h3
                     size: sm
                     alignX: start
@@ -261,8 +268,9 @@ pageSections:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
                     text: >-
-                      Have an idea for a bake sale or other fundraiser? We'd love to hear from you — get in
-                      touch and let's kōrero about how we can support your efforts.
+                      Have an idea for a bake sale or other fundraiser? We'd
+                      love to hear from you — get in touch and let's kōrero
+                      about how we can support your efforts.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
@@ -292,7 +300,9 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: '[Placeholder] Pre-orders for official event t-shirts — keep an eye on our socials for the link.'
+                    text: >-
+                      Purchase our official event t-shirts — during our festival
+                      or keep an eye on our socials for the link.
                     alignX: start
                     size: sm
                 maxContentWidth: 3xl
@@ -315,8 +325,9 @@ pageSections:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
                     text: >-
-                      Join our mailing list to hear about opportunities to get involved, future events and
-                      our journey towards a sustainable future.
+                      Join our mailing list to hear about opportunities to get
+                      involved, future events and our journey towards a
+                      sustainable future.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
@@ -333,6 +344,7 @@ pageSections:
                 colorScheme: inherit
                 backgroundColor: surface
                 rounded: true
+        gap: md
     maxContentWidth: lg
     paddingHorizontal: md
     paddingVertical: xl
@@ -345,7 +357,7 @@ pageSections:
       positionHorizontal: center
     rounded: false
   - _component: page-sections/builders/custom-section
-    label: 'Donation details'
+    label: Donation details
     contentSections:
       - _component: building-blocks/core-elements/heading
         text: Make a koha
@@ -355,26 +367,24 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: 'To help us track and acknowledge your support, please use the following details for direct bank transfers:'
+        text: >-
+          To help us track and acknowledge your support, please use the
+          following details for direct bank transfers:
         alignX: center
         size: md
       - _component: building-blocks/core-elements/simple-text
         text: >-
-          **Account Name:** Te Mana Ahua Ake Charitable Trust
-
-          **Account Number:** 03-1727-0093417-00
-
-          **Reference 1:** DONATION
-
-          **Reference 2:** Your Name / Organisation Name
+          **Account Name:** Te Mana Ahua Ake Charitable Trust **Account
+          Number:** 03-1727-0093417-00 **Reference 1:** DONATION **Reference
+          2:** Your Name / Organisation Name
         alignX: center
         size: md
       - _component: building-blocks/core-elements/simple-text
         text: >-
-          If you require a receipt for tax purposes, please email [admin@otagopolyfest.nz](mailto:admin@otagopolyfest.nz)
-          with the name used in the deposit reference, the exact amount deposited, and the date of the
-          deposit. *(Note: double check this is the right inbox for receipt requests before this goes live —
-          a couple of different addresses came up across different documents.)*
+          If you require a receipt for tax purposes, please email
+          [admin@otagopolyfest.nz](mailto:admin@otagopolyfest.nz) with the name
+          used in the deposit reference, the exact amount deposited, and the
+          date of the deposit. 
         alignX: center
         size: sm
     maxContentWidth: md
