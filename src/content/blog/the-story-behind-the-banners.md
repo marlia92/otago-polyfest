@@ -7,15 +7,11 @@ description: >-
 pubDate: 2026-07-11T00:00:00Z
 author: Otago Polyfest
 ---
-# The Story Behind *Te Moananui ā Kiwa*: The Banners That Tell Our Story
-
-If you've attended Otago Polyfest over the past decade, you've almost certainly stood beneath our iconic Te Moananui ā Kiwa banners.
-
 Towering above the stage, these vibrant artworks have become synonymous with Otago Polyfest. They frame thousands of performances each year and provide a powerful reminder that every group who steps onto our stage is part of a much larger story.
 
 What many people don't know is how these taonga came to be.
 
-<p><img src="/src/assets/images/op-original-banner-design.jpg" alt="Te Moananui ā Kiwa banner design" loading="lazy" title="Te Moananui ā Kiwa banner design" /></p>
+<p><img alt="Te Moananui ā Kiwa banner design" loading="lazy" title="Te Moananui ā Kiwa banner design" src="/src/assets/images/op-original-banner-design.jpg" /></p>
 
 ## A Community Collaboration
 

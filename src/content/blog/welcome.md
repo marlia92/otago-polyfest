@@ -7,11 +7,9 @@ description: >-
 pubDate: 2026-07-11T00:00:00Z
 author: Otago Polyfest
 ---
-# Welcome to the New Otago Polyfest Website
+&nbsp;
 
-Welcome to the new home of Otago Polyfest!
-
-<p><img src="/src/assets/images/photos/venue-crowd.jpg" alt="Audience haka tautoko" loading="lazy" title="Audience haka tautoko" /></p>
+<p><img alt="Audience haka tautoko" loading="lazy" title="Audience haka tautoko" src="/src/assets/images/photos/venue-crowd.jpg" /></p>
 
 We're excited to launch our new website as we begin another incredible festival journey. Whether you're a performer, kaiako, tutor, whānau member, volunteer, sponsor, stallholder or first-time visitor, this website has been designed to make it easier than ever to stay connected with everything happening at Otago Polyfest.
 
