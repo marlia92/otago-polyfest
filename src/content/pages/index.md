@@ -5,8 +5,7 @@ pageSections:
   - _component: page-sections/heroes/hero-split
     eyebrow: OTAGO POLYFEST
     heading: Kia Maumahara ki tōu Mana Ahua Ake
-    subtext: >-
-      Otago Polyfest brings together thousands of performers, schools, whānau
+    subtext: Otago Polyfest brings together thousands of performers, schools, whānau
       and communities each year to celebrate Māori and Pacific excellence
       through culture, performance and connection. Everyone is welcome — nau
       mai, haere mai.
@@ -78,8 +77,7 @@ pageSections:
   - _component: page-sections/features/feature-grid
     eyebrow: What to expect
     heading: A celebration of culture and community
-    subtext: >-
-      Every performance tells a story. Every volunteer, sponsor, school and
+    subtext: Every performance tells a story. Every volunteer, sponsor, school and
       supporter helps make those stories possible.
     gap: md
     minItemWidth: 270
@@ -180,6 +178,21 @@ pageSections:
     subtext: >-
       Your support helps create opportunities for thousands of young people
       \#ittakesavillage
+
+
+      If you would like to make a koha please help us track and acknowledge your
+      support, by using the following details for direct bank transfers:
+
+
+      \*\*Account Name:\*\* Te Mana Ahua Ake Charitable Trust \*\*Account
+      Number:\*\* 03-1727-0093417-00 \*\*Reference 1:\*\* DONATION \*\*Reference
+      2:\*\* Your Name / Organisation Name
+
+
+      If you require a receipt for tax purposes, please email
+      \[admin@otagopolyfest.nz\](mailto:admin@otagopolyfest.nz) with the name
+      used in the deposit reference, the exact amount deposited, and the date of
+      the deposit.
     buttonSections:
       - _component: building-blocks/core-elements/button
         text: Become a Sponsor
