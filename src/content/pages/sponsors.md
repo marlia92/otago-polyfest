@@ -393,8 +393,28 @@ pageSections:
     eyebrow: ''
     heading: Our Suppliers
     subtext: ''
-    logos: []
-    logoSize: md
+    logos:
+      - _component: page-sections/people/logo-grid/logo-item
+        name: 'Living Well '
+        logoSource: /src/assets/images/email-signature-1.jpg
+        logoAlt: Sponsor or supplier name
+        link: ''
+      - _component: page-sections/people/logo-grid/logo-item
+        name: OBE
+        logoSource: /src/assets/images/obe-logo-rgb-fullcolour.jpg
+        logoAlt: Sponsor or supplier name
+        link: ''
+      - _component: page-sections/people/logo-grid/logo-item
+        name: SPS
+        logoSource: /src/assets/images/sps-email.png
+        logoAlt: Sponsor or supplier name
+        link: ''
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Strawberry Sound
+        logoSource: /src/assets/images/strawberry-social.jpg
+        logoAlt: Sponsor or supplier name
+        link: ''
+    logoSize: lg
     colorScheme: inherit
     backgroundColor: surface
     backgroundImage:
