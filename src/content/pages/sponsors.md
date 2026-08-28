@@ -1,10 +1,10 @@
 ---
 _schema: default
-title: Support Us
+title: Sponsors
 pageSections:
   - _component: page-sections/heroes/hero-center
     eyebrow: ''
-    heading: Support Us
+    heading: Our Sponsors
     subtext: Invest in the future of our young people.
     buttonSections:
       - _component: building-blocks/core-elements/button
@@ -47,6 +47,32 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
     rounded: false
+  - _component: page-sections/people/logo-grid
+    eyebrow: ''
+    heading: Our Sponsors
+    subtext: ''
+    logos: []
+    logoSize: md
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+  - _component: page-sections/people/logo-grid
+    eyebrow: ''
+    heading: Our Suppliers
+    subtext: ''
+    logos: []
+    logoSize: md
+    colorScheme: inherit
+    backgroundColor: surface
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
   - _component: page-sections/builders/custom-section
     label: Stats
     contentSections:

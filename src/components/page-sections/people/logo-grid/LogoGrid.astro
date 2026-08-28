@@ -1,0 +1,100 @@
+---
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import SimpleText from "@core-elements/simple-text/SimpleText.astro";
+import LogoItem from "@page-sections/people/logo-grid/LogoItem.astro";
+import Grid from "@wrappers/grid/Grid.astro";
+import GridItem from "@wrappers/grid/GridItem.astro";
+
+const {
+  eyebrow = "",
+  heading = "",
+  subtext = "",
+  logos = [],
+  logoSize = "md",
+  colorScheme = "inherit",
+  backgroundColor,
+  backgroundImage,
+  paddingVertical = "4xl",
+  class: className,
+} = Astro.props;
+---
+
+<CustomSection
+  class:list={["logo-grid", `logo-size-${logoSize}`, className]}
+  maxContentWidth="2xl"
+  paddingHorizontal="lg"
+  paddingVertical={paddingVertical}
+  colorScheme={colorScheme}
+  backgroundColor={backgroundColor}
+  backgroundImage={backgroundImage}
+>
+  {eyebrow && (
+    <SimpleText alignX="center" class="eyebrow" data-prop="eyebrow">
+      {eyebrow}
+    </SimpleText>
+  )}
+  {heading && (
+    <Heading class="logo-grid-heading" level="h2" size="lg" alignX="center" data-prop="heading">
+      {heading}
+    </Heading>
+  )}
+  {subtext && (
+    <SimpleText class="logo-grid-subtext" size="md" alignX="center" data-prop="subtext">
+      {subtext}
+    </SimpleText>
+  )}
+
+  {logos.length === 0 && (
+    <p class="logo-grid-empty">No logos added yet — add some using the "logos" field in CloudCannon.</p>
+  )}
+
+  <Grid class="logo-grid-grid" gap="lg" minItemWidth={160} maxItemWidth={220} data-prop="logos" layout="center">
+    {
+      logos.map((logo: any, index: number) => (
+        <GridItem>
+          <editable-array-item data-component="page-sections/people/logo-grid/logo-item">
+            <LogoItem {...logo} class="logo-grid-item" data-index={index} />
+          </editable-array-item>
+        </GridItem>
+      ))
+    }
+  </Grid>
+</CustomSection>
+
+<style lang="pcss" is:global>
+  @layer page-sections {
+    .logo-grid-heading {
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .logo-grid-subtext {
+      margin-top: 0;
+    }
+
+    .logo-grid-empty {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      margin-top: var(--spacing-md);
+      text-align: center;
+    }
+
+    .logo-grid-grid {
+      align-items: center;
+      margin-top: var(--spacing-xl);
+    }
+
+    /* Logo tile sizing - controls the fixed height each logo scales within,
+       so mismatched logo aspect ratios all sit at a consistent visual size
+       without cropping (object-fit: contain, not cover). */
+    .logo-grid.logo-size-sm .logo-tile {
+      height: 56px;
+    }
+    .logo-grid.logo-size-md .logo-tile {
+      height: 80px;
+    }
+    .logo-grid.logo-size-lg .logo-tile {
+      height: 110px;
+    }
+  }
+</style>

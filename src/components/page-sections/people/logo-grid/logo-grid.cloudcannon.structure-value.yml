@@ -1,0 +1,62 @@
+label: Logo Grid
+icon: apps
+description: Responsive grid for showcasing sponsor or supplier logos.
+value:
+  _component: page-sections/people/logo-grid
+  eyebrow: ''
+  heading: Our Sponsors
+  subtext: ''
+  logos: []
+  logoSize: md
+  colorScheme: inherit
+  backgroundColor: base
+  backgroundImage:
+    source: ''
+    alt: ''
+    positionVertical: top
+    positionHorizontal: center
+preview:
+  text:
+    - Logo Grid
+  subtext:
+    - key: heading
+  icon: apps
+picker_preview:
+  text: Logo Grid
+  subtext: Grid of sponsor or supplier logos, each optionally linking out.
+_inputs_from_glob:
+  - /src/components/page-sections/people/logo-grid/logo-grid.cloudcannon.inputs.yml
+_structures:
+  logoGridItems:
+    values:
+      - label: Logo
+        icon: image
+        value:
+          _component: page-sections/people/logo-grid/logo-item
+          name: Sponsor or supplier name
+          logoSource: ''
+          logoAlt: Sponsor or supplier name
+          link: ''
+        preview:
+          text:
+            - key: name
+            - Logo
+          image:
+            - key: logoSource
+        _inputs:
+          name:
+            type: text
+            comment: Name of the sponsor or supplier (used for alt text and accessibility).
+          logoSource:
+            type: image
+            comment: The logo image.
+            options:
+              paths:
+                uploads: src/assets/images
+                static: ""
+          logoAlt:
+            type: text
+            comment: Alt text describing the logo (defaults to the name if left blank).
+          link:
+            type: text
+            comment: 'Optional URL to link to (e.g. https://example.com). Leave blank for no link.'

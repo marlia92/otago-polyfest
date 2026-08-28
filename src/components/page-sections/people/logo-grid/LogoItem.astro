@@ -1,0 +1,68 @@
+---
+import Image from "@core-elements/image/Image.astro";
+
+const {
+  name = "",
+  logoSource = "",
+  logoAlt = "",
+  link = "",
+  class: className,
+  _component,
+  ...htmlAttributes
+} = Astro.props;
+
+const Tag = link ? "a" : "div";
+const linkProps = link
+  ? { href: link, target: "_blank", rel: "noopener noreferrer", "aria-label": name || undefined }
+  : {};
+---
+
+<Tag {...htmlAttributes} {...linkProps} class:list={["logo-item", className]}>
+  <div class="logo-tile">
+    <Image
+      source={logoSource}
+      alt={logoAlt || name}
+      widths={[200, 400]}
+      sizes="220px"
+      editable={true}
+      data-prop-src="logoSource"
+      data-prop-alt="logoAlt"
+      data-editable="image"
+    />
+  </div>
+  {name && <span class="logo-item-name visually-hidden">{name}</span>}
+</Tag>
+
+<style lang="pcss" is:global>
+  @layer components {
+    .logo-item {
+      color: inherit;
+      display: block;
+      text-decoration: none;
+    }
+
+    .logo-tile {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      transition: transform var(--animation-normal) ease-in-out;
+      width: 100%;
+
+      .image {
+        height: 100%;
+        width: 100%;
+      }
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+
+    a.logo-item:hover .logo-tile,
+    a.logo-item:focus-visible .logo-tile {
+      transform: scale(1.05);
+    }
+  }
+</style>
