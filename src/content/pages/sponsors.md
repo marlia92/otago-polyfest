@@ -24,11 +24,10 @@ pageSections:
       positionHorizontal: center
     paddingVertical: 2xl
   - _component: page-sections/builders/custom-section
-    label: Sponsor logos placeholder
+    label: Intro
     contentSections:
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          Every year thousands of young people step onto our stages with pride,
+        text: Every year thousands of young people step onto our stages with pride,
           confidence and a deep connection to their culture. Behind every
           performance is a community of educators, volunteers, whānau and
           partners who help make these opportunities possible. We invite
@@ -47,32 +46,6 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
     rounded: false
-  - _component: page-sections/people/logo-grid
-    eyebrow: ''
-    heading: Our Sponsors
-    subtext: ''
-    logos: []
-    logoSize: md
-    colorScheme: inherit
-    backgroundColor: base
-    backgroundImage:
-      source: ''
-      alt: ''
-      positionVertical: top
-      positionHorizontal: center
-  - _component: page-sections/people/logo-grid
-    eyebrow: ''
-    heading: Our Suppliers
-    subtext: ''
-    logos: []
-    logoSize: md
-    colorScheme: inherit
-    backgroundColor: surface
-    backgroundImage:
-      source: ''
-      alt: ''
-      positionVertical: top
-      positionHorizontal: center
   - _component: page-sections/builders/custom-section
     label: Stats
     contentSections:
@@ -152,15 +125,14 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          For more than 33 years, Otago Polyfest has been a beating heart of our
+        text: "For more than 33 years, Otago Polyfest has been a beating heart of our
           community — a place where all tamariki and rangatahi can stand tall,
           celebrate our collective heritage and express their identity through
           the power of Toi Ihiihi. Polyfest has never been built by a single
           organisation. It's shaped every year by tamariki, kaiako, tutors,
           whānau, volunteers, schools, community organisations, funders,
           sponsors and supporters who each invest their time, energy and aroha.
-          #ittakesavillage
+          #ittakesavillage"
         alignX: center
         size: md
     maxContentWidth: md
@@ -185,9 +157,7 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          There are many ways to be part of the village that keeps Polyfest
-          going.
+        text: There are many ways to be part of the village that keeps Polyfest going.
         alignX: center
         size: md
       - _component: building-blocks/wrappers/grid
@@ -209,10 +179,8 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Every contribution helps us build a stronger foundation
-                      for the future. Bank details are below, or get in touch to
-                      arrange a koha.
+                    text: Every contribution helps us build a stronger foundation for the future.
+                      Bank details are below, or get in touch to arrange a koha.
                     alignX: start
                     size: sm
                 maxContentWidth: 3xl
@@ -234,10 +202,9 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Our festival relies on the mahi aroha of incredible
-                      kaimahi. Give your time, skills or energy and become part
-                      of the team behind Polyfest.
+                    text: Our festival relies on the mahi aroha of incredible kaimahi. Give your
+                      time, skills or energy and become part of the team behind
+                      Polyfest.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
@@ -267,10 +234,9 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Schools with the capacity can make a voluntary $3
-                      contribution per student to support the festival. Contact
-                      our Performer Liaison for details.
+                    text: Schools with the capacity can make a voluntary $3 contribution per student
+                      to support the festival. Contact our Performer Liaison for
+                      details.
                     alignX: start
                     size: sm
                   - _component: building-blocks/wrappers/button-group
@@ -305,10 +271,9 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Have an idea for a bake sale or other fundraiser? We'd
-                      love to hear from you — get in touch and let's kōrero
-                      about how we can support your efforts.
+                    text: Have an idea for a bake sale or other fundraiser? We'd love to hear from
+                      you — get in touch and let's kōrero about how we can
+                      support your efforts.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
@@ -338,9 +303,8 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Purchase our official event t-shirts — during our festival
-                      or keep an eye on our socials for the link.
+                    text: Purchase our official event t-shirts — during our festival or keep an eye
+                      on our socials for the link.
                     alignX: start
                     size: sm
                 maxContentWidth: 3xl
@@ -362,10 +326,8 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: >-
-                      Join our mailing list to hear about opportunities to get
-                      involved, future events and our journey towards a
-                      sustainable future.
+                    text: Join our mailing list to hear about opportunities to get involved, future
+                      events and our journey towards a sustainable future.
                     alignX: start
                     size: sm
                   - _component: building-blocks/core-elements/button
@@ -394,6 +356,52 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
     rounded: false
+  - _component: page-sections/people/logo-grid
+    eyebrow: ''
+    heading: Our Sponsors
+    subtext: ''
+    logos:
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Community Organisation Grants Scheme
+        logoSource: /src/assets/images/cogs.png
+        logoAlt: Community Organisation Grants Scheme
+        link:
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Te Hou Ora Whānau Services
+        logoSource: /src/assets/images/thows-logo-1.png
+        logoAlt: Te Hou Ora Whānau Services
+        link: https://www.thows.org.nz/
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Sports Otago
+        logoSource: /src/assets/images/sport-otago-condensed-logo-blue.png
+        logoAlt: Sport Otago Logo
+        link: ''
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Hiwa Navigation
+        logoSource: /src/assets/images/screenshot-2026-03-08-at-1-59-32-pm.png
+        logoAlt: Sponsor or supplier name
+        link: ''
+    logoSize: lg
+    colorScheme: inherit
+    backgroundColor: base
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
+  - _component: page-sections/people/logo-grid
+    eyebrow: ''
+    heading: Our Suppliers
+    subtext: ''
+    logos: []
+    logoSize: md
+    colorScheme: inherit
+    backgroundColor: surface
+    backgroundImage:
+      source: ''
+      alt: ''
+      positionVertical: top
+      positionHorizontal: center
   - _component: page-sections/builders/custom-section
     label: Donation details
     contentSections:
@@ -405,21 +413,18 @@ pageSections:
         iconName:
         iconPosition: before
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          To help us track and acknowledge your support, please use the
-          following details for direct bank transfers:
+        text: 'To help us track and acknowledge your support, please use the following
+          details for direct bank transfers:'
         alignX: center
         size: md
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          **Account Name:** Te Mana Ahua Ake Charitable Trust **Account
-          Number:** 03-1727-0093417-00 **Reference 1:** DONATION **Reference
-          2:** Your Name / Organisation Name
+        text: '**Account Name:** Te Mana Ahua Ake Charitable Trust **Account Number:**
+          03-1727-0093417-00 **Reference 1:** DONATION **Reference 2:** Your
+          Name / Organisation Name'
         alignX: center
         size: md
       - _component: building-blocks/core-elements/simple-text
-        text: >-
-          If you require a receipt for tax purposes, please email
+        text: If you require a receipt for tax purposes, please email
           [admin@otagopolyfest.nz](mailto:admin@otagopolyfest.nz) with the name
           used in the deposit reference, the exact amount deposited, and the
           date of the deposit.
