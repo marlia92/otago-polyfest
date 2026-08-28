@@ -60,20 +60,20 @@ pageSections:
     heading: 'Support Otago Polyfest '
     subtext: >-
       We have been humbled by the requests for ways to support our festival
-      \#ittakesavillage
+      #ittakesavillage
 
 
       If you would like to make a koha please help us track and acknowledge your
       support, by using the following details for direct bank transfers:
 
 
-      \*\*Account Name:\*\* Te Mana Ahua Ake Charitable Trust \*\*Account
-      Number:\*\* 03-1727-0093417-00 \*\*Reference 1:\*\* DONATION \*\*Reference
-      2:\*\* Your Name / Organisation Name
+      **Account Name:** Te Mana Ahua Ake Charitable Trust **Account
+      Number:** 03-1727-0093417-00 **Reference 1:** DONATION **Reference
+      2:** Your Name / Organisation Name
 
 
       If you require a receipt for tax purposes, please email
-      \[admin@otagopolyfest.nz\](mailto:admin@otagopolyfest.nz) with the name
+      [admin@otagopolyfest.nz](mailto:admin@otagopolyfest.nz) with the name
       used in the deposit reference, the exact amount deposited, and the date of
       the deposit.
     buttonSections: []
