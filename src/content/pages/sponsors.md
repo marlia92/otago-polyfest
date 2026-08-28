@@ -271,7 +271,7 @@ pageSections:
                     iconName:
                     iconPosition: before
                   - _component: building-blocks/core-elements/simple-text
-                    text: Have an idea for a bake sale or other fundraiser? We'd love to hear from
+                    text: Have an idea and want to coordinate fundraising? We'd love to hear from
                       you — get in touch and let's kōrero about how we can
                       support your efforts.
                     alignX: start
