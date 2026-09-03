@@ -1,0 +1,105 @@
+---
+import { getCollection } from "astro:content";
+import Page from "@layouts/Page.astro";
+import CustomSection from "@builders/custom-section/CustomSection.astro";
+import Heading from "@core-elements/heading/Heading.astro";
+import Image from "@core-elements/image/Image.astro";
+import Card from "@wrappers/card/Card.astro";
+
+export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const blogPosts = (await getCollection("blog")).sort(
+    (a: any, b: any) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  );
+
+  return paginate(blogPosts, { pageSize: 9 });
+}
+
+const { page } = Astro.props as { page: any };
+---
+
+<Page title="News" description="Updates in the lead-up to and following Otago Polyfest.">
+  <CustomSection maxContentWidth="xl" paddingHorizontal="lg" paddingVertical="2xl">
+    <Heading level="h1" size="xl" alignX="center" text="Latest News" />
+
+    <div class="blog-grid">
+      {
+        page.data.map((post: any) => {
+          const pubDate = new Date(post.data.pubDate).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+
+          return (
+            <Card link={`/blog/${post.id}/`} rounded={true} border={true} class="blog-card">
+              {post.data.image && (
+                <Image
+                  slot="before"
+                  source={post.data.image}
+                  alt={post.data.title}
+                  aspectRatio="landscape"
+                  editable={false}
+                />
+              )}
+              <p class="blog-card-date">{pubDate}</p>
+              <Heading level="h2" size="md" text={post.data.title} editable={false} />
+              <p class="blog-card-description">{post.data.description}</p>
+            </Card>
+          );
+        })
+      }
+    </div>
+
+    {page.data.length === 0 && <p>No news posts yet — check back soon.</p>}
+
+    <nav class="blog-pagination" aria-label="Pagination">
+      {page.url.prev && (
+        <a href={page.url.prev}>&larr; Newer posts</a>
+      )}
+      {page.url.next && (
+        <a href={page.url.next}>Older posts &rarr;</a>
+      )}
+    </nav>
+  </CustomSection>
+</Page>
+
+<style lang="pcss" is:global>
+  @layer page-sections {
+    .blog-grid {
+      display: grid;
+      gap: var(--spacing-xl);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      margin-top: var(--spacing-xl);
+    }
+
+    .blog-card {
+      padding: var(--spacing-md);
+    }
+
+    .blog-card-date {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      margin-top: 0;
+    }
+
+    .blog-card-description {
+      color: var(--color-text-muted);
+    }
+
+    .blog-pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--spacing-2xl);
+
+      a {
+        color: var(--color-link);
+        font-weight: var(--font-weight-semibold);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+</style>
