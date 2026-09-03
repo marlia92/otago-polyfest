@@ -386,6 +386,16 @@ pageSections:
         logoSource: /src/assets/images/southern-lights-services-ltd-byw.png
         logoAlt: Sponsor or supplier name
         link: ''
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Dunedin Airport
+        logoSource: /src/assets/images/dunedin-airport-logo-primary-rgb.jpg
+        logoAlt: Dunedin Airport
+        link: https://www.dunedinairport.co.nz/community
+      - _component: page-sections/people/logo-grid/logo-item
+        name: Trends
+        logoSource: /src/assets/images/trends-full-colour-logo.png
+        logoAlt: Trends Logo
+        link: ''
     logoSize: lg
     colorScheme: inherit
     backgroundColor: base
